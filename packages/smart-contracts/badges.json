@@ -1,22 +1,86 @@
 {
   "badges": [
     {
-      "name": "Super Cohort 24",
-      "description": "Graduated from Super Cohort 0",
-      "platform": "Optimism",
+      "name": "Lisk User",
+      "description": "Number of transactions made on Lisk",
+      "platform": "Lisk",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/SuperCohort0-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/SuperCohort0-1.svg",
-          "minValue": 1,
-          "points": 100,
-          "URI": "https://ipfs.io/ipfs/Qmbw5BFxPQD3cxSGVKBASrzbgZdtLWoJXaJ54sPeandY3E/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000001.json"
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-1.svg",
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-2.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-2.svg",
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-3.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-3.svg",
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-4.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-4.svg",
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-5.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-5.svg",
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "Complete Super Cohort 0",
+      "condition": "{{variable}} transactions on Lisk",
+      "chain": "Lisk",
+      "id": 12,
+      "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000.json"
+    },
+    {
+      "name": "Lisk Aidrop S1",
+      "description": "Join the Verified Airdrop participant Guild",
+      "platform": "Lisk",
+      "levels": [
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskAirdropS1-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskAirdropS1-1.svg",
+          "minValue": 1,
+          "points": 50,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000001.json"
+        }
+      ],
+      "condition": "Join Lisk Aidrop on Guild",
+      "chain": "Lisk",
+      "id": 13,
+      "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000000.json"
+    },
+    {
+      "name": "Early Power user",
+      "description": "The first 100 accounts to reach level 3",
+      "platform": "Super Accounts",
+      "levels": [
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/EarlyPowerUser-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/EarlyPowerUser-1.svg",
+          "minValue": 1,
+          "points": 100,
+          "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000001.json"
+        }
+      ],
+      "condition": "Reach Level 3",
       "chain": "Optimism",
-      "id": 11,
-      "URI": "https://ipfs.io/ipfs/Qmbw5BFxPQD3cxSGVKBASrzbgZdtLWoJXaJ54sPeandY3E/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000.json"
+      "id": 14,
+      "URI": "ipfs/QmNsW8fEBmXoSzVnuui6r2jk5xBVWoRqT9CjkavdTDYXyM/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000.json"
     }
   ]
 }

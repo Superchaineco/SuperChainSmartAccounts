@@ -156,7 +156,7 @@
           "points": 30
         }
       ],
-      "condition": "Hold {{variable}} Nouns on Ethereum Mainnet.",
+      "condition": "Hold {{variable}} Nouns on Ethereum Mainnet",
       "chain": "Ethereum"
     },
     {
@@ -171,12 +171,12 @@
           "points": 150
         }
       ],
-      "condition": "Be the owner of a {{variable}} wallet who is a Citizen.",
+      "condition": "Be the owner of a {{variable}} wallet who is a Citizen",
       "chain": "Optimism"
     },
     {
-      "name": "Giveth Donations Made",
-      "description": "Donate on Giveth",
+      "name": "Giveth Donor",
+      "description": "Donations on Giveth",
       "platform": "Giveth",
       "levels": [
         {
@@ -198,7 +198,6 @@
           "minValue": 250,
           "points": 30
         },
-
         {
           "2DImage": "https://account.superchain.eco/static/badges/2DImages/GivethDonationsMade-4.svg",
           "3DImage": "https://account.superchain.eco/static/badges/3DImages/GivethDonationsMade-4.svg",
@@ -206,12 +205,12 @@
           "points": 40
         }
       ],
-      "condition": "Donate ${{variable}} more on Giveth",
+      "condition": "Donate at least ${{variable}} on Giveth",
       "chain": "Optimism"
     },
     {
-      "name": "Talent Protocol score",
-      "description": "Builder Fi score on Talent Protocol passport",
+      "name": "Builder Score",
+      "description": "Builder score by Talent Protocol",
       "platform": "Talent Protocol",
       "levels": [
         {
@@ -233,7 +232,7 @@
           "points": 30
         }
       ],
-      "condition": "Have a Builder Fi score of {{variable}}",
+      "condition": "Have a Builder score above {{variable}}",
       "chain": "Ethereum"
     },
     {
@@ -252,8 +251,8 @@
       "chain": "Optimism"
     },
     {
-      "name": "Gitcoin Donations Made",
-      "description": "Donate on Gitcoin",
+      "name": "Gitcoin Donor",
+      "description": "Donations on Gitcoin",
       "platform": "Gitcoin",
       "levels": [
         {
@@ -281,7 +280,7 @@
           "points": 40
         }
       ],
-      "condition": "Donate ${{variable}} more on Gitcoin",
+      "condition": "Donate at least ${{variable}} on Gitcoin",
       "chain": "Optimism"
     },
     {
@@ -297,6 +296,75 @@
         }
       ],
       "condition": "Complete Super Cohort 0",
+      "chain": "Optimism"
+    },
+    {
+      "name": "Lisk User",
+      "description": "Number of transactions made on Lisk",
+      "platform": "Lisk",
+      "levels": [
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-1.svg",
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-2.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-2.svg",
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-3.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-3.svg",
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-4.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-4.svg",
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-5.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-5.svg",
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transactions on Lisk",
+      "chain": "Lisk"
+    },
+    {
+      "name": "Lisk Aidrop S1",
+      "description": "Join the Verified Airdrop participant Guild",
+      "platform": "Lisk",
+      "levels": [
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskAirdropS1-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskAirdropS1-1.svg",
+          "minValue": 1,
+          "points": 50
+        }
+      ],
+      "condition": "Join Lisk Aidrop on Guild",
+      "chain": "Lisk"
+    },
+    {
+      "name": "Early Power user",
+      "description": "The first 100 accounts to reach level 3",
+      "platform": "Super Accounts",
+      "levels": [
+        {
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/EarlyPowerUser-1.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/EarlyPowerUser-1.svg",
+          "minValue": 1,
+          "points": 100
+        }
+      ],
+      "condition": "Reach Level 3",
       "chain": "Optimism"
     }
   ]
