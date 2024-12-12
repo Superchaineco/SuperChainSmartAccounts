@@ -16,6 +16,7 @@ import {
   PointsIncremented,
   OwnerPopulationRemoved,
   SuperChainSmartAccount,
+  LevelClaim,
   TierTresholds,
   Meta,
 } from "../generated/schema";
@@ -37,9 +38,9 @@ export function handleEIP712DomainChanged(
   entity.save();
 }
 
-export function handleTierTresholdAdded(event: TierTresholdAddedEvent): void{
-	let entity =  TierTresholds.load(TIER_TRESHOLDS);
-  if(entity == null){
+export function handleTierTresholdAdded(event: TierTresholdAddedEvent): void {
+  let entity = TierTresholds.load(TIER_TRESHOLDS);
+  if (entity == null) {
     entity = new TierTresholds(TIER_TRESHOLDS);
     entity.tresholds = [];
   }
@@ -49,9 +50,9 @@ export function handleTierTresholdAdded(event: TierTresholdAddedEvent): void{
   entity.save();
 }
 
-export function handleTierTresholdUpdated(event: TierTresholdUpdatedEvent): void{
-	let entity =  TierTresholds.load(TIER_TRESHOLDS);
-  if(entity == null){
+export function handleTierTresholdUpdated(event: TierTresholdUpdatedEvent): void {
+  let entity = TierTresholds.load(TIER_TRESHOLDS);
+  if (entity == null) {
     entity = new TierTresholds(TIER_TRESHOLDS);
     entity.tresholds = [];
   }
@@ -160,24 +161,39 @@ export function handlePointsIncremented(event: PointsIncrementedEvent): void {
     superChainSmartAccount.level = BigInt.fromI32(0)
     superChainSmartAccount.points = BigInt.fromI32(0);
   }
-  
+
+
   superChainSmartAccount.points = superChainSmartAccount.points.plus(
     entity.points,
   );
   let thresholdsEntity = TierTresholds.load(TIER_TRESHOLDS);
-  if(thresholdsEntity && event.params.levelUp){
+  if (thresholdsEntity && event.params.levelUp) {
     let thresholds = thresholdsEntity.tresholds;
     let currentPoints = superChainSmartAccount.points;
     let newLevel = BigInt.fromI32(0);
+    superChainSmartAccount.level = newLevel;
+
+  
 
     for (let i = 0; i < thresholds.length; i++) {
       if (currentPoints >= thresholds[i]) {
         newLevel = BigInt.fromI32(i + 1);
+        let levelClaimId = (event.params.recipient.concatI32(newLevel.toI32()));
+        let levelClaim = LevelClaim.load(levelClaimId);
+    
+        if (levelClaim == null) {
+          levelClaim = new LevelClaim(levelClaimId);
+          levelClaim.account = superChainSmartAccount.id;
+          levelClaim.level = newLevel;
+          levelClaim.timestamp = event.block.timestamp;
+          levelClaim.save();
+        }    
       } else {
-        break; 
+        break;
       }
     }
     superChainSmartAccount.level = newLevel;
+
   }
   superChainSmartAccount.save();
   entity.superChainSmartAccount = superChainSmartAccount.id;
@@ -208,12 +224,12 @@ export function handleSuperChainSmartAccountCreated(
 
 export function handleNounUpdated(event: NounUpdatedEvent): void {
   let entity = SuperChainSmartAccount.load(event.params.safe);
-if(entity != null){
-  entity.noun_background = event.params.noun.background;
+  if (entity != null) {
+    entity.noun_background = event.params.noun.background;
     entity.noun_body = event.params.noun.body;
-  entity.noun_accessory = event.params.noun.accessory;
-  entity.noun_head = event.params.noun.head;
-  entity.noun_glasses = event.params.noun.glasses;
-  entity.save();
-}
+    entity.noun_accessory = event.params.noun.accessory;
+    entity.noun_head = event.params.noun.head;
+    entity.noun_glasses = event.params.noun.glasses;
+    entity.save();
+  }
 }

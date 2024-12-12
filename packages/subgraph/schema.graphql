@@ -66,6 +66,7 @@ type SuperChainSmartAccount @entity {
   level: BigInt!
   points: BigInt!
   badges: [AccountBadge!]! @derivedFrom(field: "user") @orderBy(direction: asc)
+  levels: [LevelClaim!]! @derivedFrom(field: "account")
 }
 
 type BadgeTier @entity {
@@ -95,10 +96,17 @@ type AccountBadge @entity {
 
 type TierTresholds @entity {
   id: ID!
-  tresholds: [BigInt!]! 
+  tresholds: [BigInt!]!
+}
+
+type LevelClaim @entity {
+  id: Bytes! # Una combinación única de usuario y nivel
+  account: SuperChainSmartAccount!
+  level: BigInt!
+  timestamp: BigInt!
 }
 
 type Meta @entity {
   id: String!
-  count: BigInt! 
+  count: BigInt!
 }
