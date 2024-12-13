@@ -1,5 +1,5 @@
 
-import { BigInt, Bytes } from "@graphprotocol/graph-ts"
+import { store } from '@graphprotocol/graph-ts'
 import {
     BadgeTierSet as BadgeTierSetEvent,
     BadgeTierUpdated as BadgeTierUpdatedEvent,
@@ -25,11 +25,19 @@ export function handleBadgeTierSet(event: BadgeTierSetEvent): void {
 
 }
 
-export function handleBadgeMetadataSettled(event: BadgeMetadataSettledEvent): void{
-    let entity = new Badge(event.params.badgeId.toHexString())
-    entity.badgeId = event.params.badgeId
-    entity.uri = event.params.generalURI
-    entity.save()
+export function handleBadgeMetadataSettled(event: BadgeMetadataSettledEvent): void {
+    let badgeId = event.params.badgeId.toHexString();
+
+    if (event.params.generalURI == "") {
+        // Remove the entity if it exists
+        store.remove("Badge", badgeId);
+    } else {
+        // Otherwise, create or update the entity
+        let entity = new Badge(badgeId);
+        entity.badgeId = event.params.badgeId;
+        entity.uri = event.params.generalURI;
+        entity.save();
+    }
 
 }
 
@@ -46,7 +54,7 @@ export function handleBadgeMinted(event: BadgeMintedEvent): void {
     let entity = new AccountBadge(event.params.user.concatI32(event.params.badgeId.toI32()))
     let badge = Badge.load(event.params.badgeId.toHexString())
     if (!badge) return
-    entity.badge =  badge.id
+    entity.badge = badge.id
     entity.tier = event.params.initialTier
     entity.points = event.params.points
     entity.user = event.params.user
