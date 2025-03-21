@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "pin-file": "node src/index.js",
+    "generate-uris": "node src/generate-uris.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

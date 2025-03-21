@@ -4,30 +4,24 @@
       "name": "Base User",
       "description": "Number of transactions made on Base",
       "platform": "Base",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-1.svg",
           "minValue": 5,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-2.svg",
           "minValue": 20,
           "points": 20
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-3.svg",
           "minValue": 50,
           "points": 30
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-4.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-4.svg",
           "minValue": 100,
           "points": 40
         },
@@ -39,333 +33,413 @@
           "points": 50
         }
       ],
-      "condition": "{{variable}} transactions on Base",
-      "chain": "Base"
+      "condition": "{{variable}} transactions made on Base",
+      "chains": ["Base"],
+      "season": null
     },
     {
       "name": "OP Mainnet User",
       "description": "Number of transactions made on OP Mainnet",
       "platform": "Optimism",
+      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-1.svg",
           "minValue": 5,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-2.svg",
           "minValue": 20,
           "points": 20
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-3.svg",
           "minValue": 50,
           "points": 30
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-4.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-4.svg",
           "minValue": 100,
           "points": 40
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-5.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-5.svg",
           "minValue": 250,
           "points": 50
         }
       ],
-      "condition": "{{variable}} transactions on OP Mainnet",
-      "chain": "Optimism"
-    },
-    {
-      "name": "Ethereum Sepolia User",
-      "description": "Number of transactions made on ETH testnet",
-      "platform": "Sepolia",
-      "levels": [
-        {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-1.svg",
-          "minValue": 10,
-          "points": 20
-        },
-        {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/OPUser-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/OPUser-2.svg",
-          "minValue": 20,
-          "points": 80
-        }
-      ],
-      "condition": "{{variable}} transactions on ETH Testnet",
-      "chain": "Sepolia"
+      "condition": "{{variable}} transactions made on OP Mainnet",
+      "chains": ["Optimism"],
+      "season": null
     },
     {
       "name": "Mode User",
       "description": "Number of transactions made on Mode",
       "platform": "Mode",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Mode-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Mode-User/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/ModeUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/ModeUser-1.svg",
           "minValue": 5,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/ModeUser-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/ModeUser-2.svg",
           "minValue": 20,
           "points": 20
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/ModeUser-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/ModeUser-3.svg",
           "minValue": 50,
           "points": 30
         }
       ],
-      "condition": "{{variable}} transactions on Mode",
-      "chain": "Mode"
+      "condition": "{{variable}} transactions made on Mode",
+      "chains": ["Mode"],
+      "season": null
     },
     {
       "name": "Hold Nouns",
       "description": "Hold Nouns on Ethereum Mainnet",
       "platform": "Nouns",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/HoldNouns-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/HoldNouns-1.svg",
           "minValue": 1,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/HoldNouns-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/HoldNouns-2.svg",
           "minValue": 3,
           "points": 20
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/HoldNouns-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/HoldNouns-3.svg",
           "minValue": 5,
           "points": 30
         }
       ],
       "condition": "Hold {{variable}} Nouns on Ethereum Mainnet",
-      "chain": "Ethereum"
+      "chains": ["Ethereum"],
+      "season": null
     },
     {
       "name": "Citizen",
       "description": "Become a Optimism Citizen",
       "platform": "Optimism",
+      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/Citizen-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/Citizen-1.svg",
           "minValue": 1,
           "points": 150
         }
       ],
       "condition": "Be the owner of a {{variable}} wallet who is a Citizen",
-      "chain": "Optimism"
+      "chains": ["Optimism"],
+      "season": null
     },
     {
       "name": "Giveth Donor",
       "description": "Donations on Giveth",
       "platform": "Giveth",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GivethDonationsMade-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GivethDonationsMade-1.svg",
           "minValue": 25,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GivethDonationsMade-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GivethDonationsMade-2.svg",
           "minValue": 100,
           "points": 20
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GivethDonationsMade-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GivethDonationsMade-3.svg",
           "minValue": 250,
           "points": 30
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GivethDonationsMade-4.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GivethDonationsMade-4.svg",
           "minValue": 1000,
           "points": 40
         }
       ],
       "condition": "Donate at least ${{variable}} on Giveth",
-      "chain": "Optimism"
+      "chains": ["Optimism"],
+      "season": null
     },
     {
       "name": "Builder Score",
       "description": "Builder score by Talent Protocol",
       "platform": "Talent Protocol",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Builder-Score/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Builder-Score/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/TalentProtocolScore-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/TalentProtocolScore-1.svg",
           "minValue": 30,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/TalentProtocolScore-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/TalentProtocolScore-2.svg",
           "minValue": 60,
           "points": 20
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/TalentProtocolScore-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/TalentProtocolScore-3.svg",
           "minValue": 90,
           "points": 30
         }
       ],
       "condition": "Have a Builder score above {{variable}}",
-      "chain": "Ethereum"
+      "chains": ["Ethereum"],
+      "season": null
     },
     {
       "name": "Worldcoin Verification",
       "description": "Verify on Worldcoin",
       "platform": "Worldcoin",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/WorldCoinVerification-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/WorldCoinVerification-1.svg",
           "minValue": 1,
           "points": 60
         }
       ],
       "condition": "Get verified with Worldcoin",
-      "chain": "Optimism"
+      "chains": ["Ethereum"],
+      "season": null
     },
     {
       "name": "Gitcoin Donor",
       "description": "Donations on Gitcoin",
       "platform": "Gitcoin",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GitcoinDonationsMade-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GitcoinDonationsMade-1.svg",
           "minValue": 25,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GitcoinDonationsMade-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GitcoinDonationsMade-2.svg",
           "minValue": 100,
           "points": 20
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GitcoinDonationsMade-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GitcoinDonationsMade-3.svg",
           "minValue": 250,
           "points": 30
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/GitcoinDonationsMade-4.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/GitcoinDonationsMade-4.svg",
           "minValue": 1000,
           "points": 40
         }
       ],
       "condition": "Donate at least ${{variable}} on Gitcoin",
-      "chain": "Optimism"
+      "chains": ["Optimism"],
+      "season": null
     },
     {
       "name": "Super Cohort 24",
       "description": "Graduated from Super Cohort 0",
       "platform": "Optimism",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/SuperCohort0-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/SuperCohort0-1.svg",
           "minValue": 1,
           "points": 100
         }
       ],
       "condition": "Complete Super Cohort 0",
-      "chain": "Optimism"
+      "chains": ["Optimism"],
+      "season": null
     },
     {
       "name": "Lisk User",
       "description": "Number of transactions made on Lisk",
       "platform": "Lisk",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lisk-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lisk-User/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-1.svg",
           "minValue": 5,
           "points": 10
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-2.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-2.svg",
           "minValue": 20,
           "points": 20
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-3.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-3.svg",
           "minValue": 50,
           "points": 30
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-4.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-4.svg",
           "minValue": 100,
           "points": 40
         },
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskUser-5.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskUser-5.svg",
           "minValue": 250,
           "points": 50
         }
       ],
-      "condition": "{{variable}} transactions on Lisk",
-      "chain": "Lisk"
+      "condition": "{{variable}} transactions made on Lisk",
+      "chains": ["Lisk"],
+      "season": null
     },
     {
       "name": "Lisk Aidrop S1",
       "description": "Join the Verified Airdrop participant Guild",
       "platform": "Lisk",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/LiskAirdropS1-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/LiskAirdropS1-1.svg",
           "minValue": 1,
           "points": 50
         }
       ],
       "condition": "Join Lisk Aidrop on Guild",
-      "chain": "Lisk"
+      "chains": ["Lisk"],
+      "season": null
     },
     {
       "name": "Early Power user",
       "description": "The first 100 accounts to reach level 3",
       "platform": "Super Accounts",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge-Stack.svg",
       "levels": [
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/EarlyPowerUser-1.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/EarlyPowerUser-1.svg",
           "minValue": 1,
           "points": 100
         }
       ],
       "condition": "Reach Level 3",
-      "chain": "Optimism"
+      "chains": ["Optimism"],
+      "season": null
+    },
+    {
+      "name": "Soneium User",
+      "description": "Number of transactions made on Soneium",
+      "platform": "Soneium",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Soneium-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Soneium-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transactions made on Soneium",
+      "chains": ["Soneium"],
+      "season": null
+    },
+   {
+      "name": "Ink User",
+      "description": "Number of transactions made on Ink",
+      "platform": "Ink",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Ink-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Ink-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transactions made on Ink",
+      "chains": ["Ink"],
+      "season": null
+    },
+   {
+      "name": "Unichain User",
+      "description": "Number of transactions made on Unichain",
+      "platform": "Unichain",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transactions made on Unichain",
+      "chains": ["Unichain"],
+      "season": null
+    },
+    {
+      "name": "S7 Super User",
+      "description": "Number of transactions made on Superchain in Season 7",
+      "platform": "Superchain",
+      "image": "https://account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 25,
+          "points": 20
+        },
+        {
+          "minValue": 70,
+          "points": 40
+        },
+        {
+          "minValue": 150,
+          "points": 60
+        },
+        {
+          "minValue": 350,
+          "points": 80
+        },
+        {
+          "minValue": 1000,
+          "points": 100
+        }
+      ],
+      "condition": "{{variable}} transactions made on Superchain in Season 7",
+      "chains": ["Optimism"],
+      "season": 7
     }
   ]
 }
