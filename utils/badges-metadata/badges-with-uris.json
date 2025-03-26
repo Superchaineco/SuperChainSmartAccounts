@@ -350,6 +350,212 @@
       "image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-User/Badge.svg",
       "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-User/Badge-Stack.svg",
       "season": null
+    },
+    {
+      "name": "Lisk Aidrop S1",
+      "description": "Join the Verified Airdrop participant Guild",
+      "platform": "Lisk",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 50,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000001.json"
+        }
+      ],
+      "condition": "Join Lisk Aidrop on Guild",
+      "chains": [
+        "Lisk"
+      ],
+      "id": 12,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "Early Power user",
+      "description": "The first 100 accounts to reach level 3",
+      "platform": "Super Accounts",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 100,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000001.json"
+        }
+      ],
+      "condition": "Reach Level 3",
+      "chains": [
+        "Optimism"
+      ],
+      "id": 13,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "Soneium User",
+      "description": "Number of transactions made on Soneium",
+      "platform": "Soneium",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000005.json"
+        }
+      ],
+      "condition": "{{variable}} transactions made on Soneium",
+      "chains": [
+        "Soneium"
+      ],
+      "id": 14,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Soneium-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Soneium-User/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "Ink User",
+      "description": "Number of transactions made on Ink",
+      "platform": "Ink",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000005.json"
+        }
+      ],
+      "condition": "{{variable}} transactions made on Ink",
+      "chains": [
+        "Ink"
+      ],
+      "id": 15,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000150000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Ink-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Ink-User/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "Unichain User",
+      "description": "Number of transactions made on Unichain",
+      "platform": "Unichain",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000005.json"
+        }
+      ],
+      "condition": "{{variable}} transactions made on Unichain",
+      "chains": [
+        "Unichain"
+      ],
+      "id": 16,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "S7 Super User",
+      "description": "Number of transactions made on Superchain in Season 7",
+      "platform": "Superchain",
+      "levels": [
+        {
+          "minValue": 25,
+          "points": 20,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 70,
+          "points": 40,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 150,
+          "points": 60,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 350,
+          "points": 80,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 1000,
+          "points": 100,
+          "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000005.json"
+        }
+      ],
+      "condition": "{{variable}} transactions made on Superchain in Season 7",
+      "chains": [
+        "Optimism"
+      ],
+      "id": 17,
+      "URI": "ipfs/QmZwGU3UjbGffjYaMwhDGNGyWprejH2FpKWDxrgS7TzRKm/00000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://staging.account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge-Stack.svg",
+      "season": 7
     }
   ]
 }
