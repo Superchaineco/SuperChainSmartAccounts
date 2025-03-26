@@ -14,3 +14,11 @@ optimism:
   SuperChainBadges:
     address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
     startBlock: 125901059 
+optimism-staging:
+  network: optimism
+  SuperChainSmartAccountModule:
+    address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
+    startBlock: 133669144 
+  SuperChainBadges:
+    address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
+    startBlock: 133669144 

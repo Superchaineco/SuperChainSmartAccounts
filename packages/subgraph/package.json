@@ -10,6 +10,7 @@
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 superchainsmartaccount~",
     "test": "graph test",
     "deploy-mainnet": "NETWORK=optimism node scripts/generate-subgraph.js && graph build && graph deploy --studio super-accounts",
+    "deploy-staging": "NETWORK=optimism-staging node scripts/generate-subgraph.js && graph build && graph deploy --studio super-accounts-staging",
     "deploy-testnet": "NETWORK=sepolia node scripts/generate-subgraph.js && graph build && graph deploy --studio superchainsmartaccount-testnet"
   },
   "dependencies": {
