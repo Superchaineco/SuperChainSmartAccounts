@@ -4,17 +4,13 @@ import {SuperChainBadges} from "../src/SuperChainBadges.sol";
 import {IEAS} from "eas-contracts/IEAS.sol";
 
 contract DeployResolver is Script {
-    address easAddress;
-    function setUp() public {
-        easAddress = vm.envAddress("EAS_ADDRESS_OPTIMISM");
-    }
-
-    function run(address badgesProxy) public returns (address) {
+    function run(address badgesProxy, address owner) public returns (address) {
+        address easAddress = 0x4200000000000000000000000000000000000021;
         SuperChainResolver resolver = new SuperChainResolver(
             IEAS(easAddress),
-            msg.sender,
+            owner,
             SuperChainBadges(badgesProxy),
-            msg.sender
+            owner
         );
         console.log("Resolver deployed at", address(resolver));
         return address(resolver);

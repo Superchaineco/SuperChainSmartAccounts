@@ -8,23 +8,23 @@ contract DeployBadges is Script {
     address proxyAddress;
     function setUp() public {}
 
-    function run() public returns (address, address) {
-        proxyAddress = deployBadges();
-        address resolver = new DeployResolver().run(proxyAddress);
-        setBadgesAndTiers(resolver);
+    function run(address owner) public returns (address, address) {
+        vm.startBroadcast();
+        proxyAddress = deployBadges(owner);
+        console.log("Proxy Address: ", proxyAddress);
+        address resolver = new DeployResolver().run(proxyAddress, owner);
         console.log("Badges proxy deployed at", proxyAddress);
         console.log("Resolver deployed at", resolver);
+        vm.stopBroadcast();
         return (proxyAddress, resolver);
     }
 
-    function deployBadges() public returns (address) {
-        vm.startBroadcast();
+    function deployBadges(address owner) public returns (address) {
         SuperChainBadges badges = new SuperChainBadges();
         ERC1967Proxy proxy = new ERC1967Proxy(
             address(badges),
-            abi.encodeCall(SuperChainBadges.initialize, msg.sender)
+            abi.encodeCall(SuperChainBadges.initialize, (owner))
         );
-        vm.stopBroadcast();
         return address(proxy);
     }
 
@@ -39,7 +39,7 @@ contract DeployBadges is Script {
         );
         for (uint256 i = 0; i < badgesJson.badges.length; i++) {
             badges[i] = BadgeMetadata({
-                badgeId: i + 1,
+                badgeId: badgesJson.badges[i].id,
                 generalURI: badgesJson.badges[i].URI
             });
         }
@@ -47,7 +47,7 @@ contract DeployBadges is Script {
         for (uint256 i = 0; i < badgesJson.badges.length; i++) {
             for (uint256 j = 0; j < badgesJson.badges[i].levels.length; j++) {
                 badgeTiers[tierIndex] = BadgeTierMetadata({
-                    badgeId: i + 1,
+                    badgeId: badgesJson.badges[i].id,
                     tier: j + 1,
                     newURI: badgesJson.badges[i].levels[j].URI,
                     points: badgesJson.badges[i].levels[j].points
@@ -55,10 +55,8 @@ contract DeployBadges is Script {
                 tierIndex++;
             }
         }
-        vm.startBroadcast();
 
         SuperChainBadges(proxyAddress).setBadgesAndTiers(badges, badgeTiers);
         SuperChainBadges(proxyAddress).setResolver(address(resolver));
-        vm.stopBroadcast();
     }
 }

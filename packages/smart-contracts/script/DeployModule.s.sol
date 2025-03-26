@@ -11,23 +11,21 @@ import {SuperChainResolver} from "../src/SuperChainResolver.sol";
 contract DeployModule is Script {
     function setUp() public {}
 
-    function run(address resolver) public returns (address) {
-        address moduleProxy = deployModule(resolver);
+    function run(address resolver, address owner) public returns (address) {
+        vm.startBroadcast();
+        address moduleProxy = deployModule(resolver, owner);
         console.log("SuperChainModule deployed at", moduleProxy);
-        setupModule(resolver, moduleProxy);
+        vm.stopBroadcast();
         return moduleProxy;
     }
 
-    function deployModule(address resolver) public returns (address) {
-        vm.startBroadcast();
+    function deployModule(address resolver, address owner) public returns (address) {
         SuperChainModuleUpgradeable module = new SuperChainModuleUpgradeable();
-        ERC1967Proxy proxy = new ERC1967Proxy(address(module), abi.encodeCall(SuperChainModuleUpgradeable.initialize, (resolver, msg.sender)));
-        vm.stopBroadcast();
+        ERC1967Proxy proxy = new ERC1967Proxy(address(module), abi.encodeCall(SuperChainModuleUpgradeable.initialize, (resolver, owner)));
         return address(proxy);
     }
 
     function setupModule(address resolver, address moduleProxy) public {
-        vm.startBroadcast();
         SuperChainResolver(payable(resolver)).updateSuperChainAccountsManager(
             SuperChainModuleUpgradeable(moduleProxy)
         );
@@ -47,6 +45,5 @@ contract DeployModule is Script {
         tresholds[8] = 7000;
         tresholds[9] = 10000;
         module.addTiersTreshold(tresholds);
-        vm.stopBroadcast();
     }
 }
