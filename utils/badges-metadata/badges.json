@@ -438,7 +438,7 @@
         }
       ],
       "condition": "{{variable}} transactions made on Superchain in Season 7",
-      "chains": ["Optimism"],
+      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
       "season": 7
     }
   ]
