@@ -1,4 +1,3 @@
-
 import { store } from '@graphprotocol/graph-ts'
 import {
     BadgeTierSet as BadgeTierSetEvent,
@@ -6,6 +5,7 @@ import {
     BadgeMinted as BadgeMintedEvent,
     BadgeMetadataSettled as BadgeMetadataSettledEvent,
     BadgeTierMetadataUpdated as BadgeTierMetadataUpdatedEvent,
+    BadgeTierRemoved as BadgeTierRemovedEvent,
 } from "../generated/SuperChainBadges/SuperChainBadges"
 import {
     BadgeTier, Badge, AccountBadge,
@@ -66,4 +66,9 @@ export function handleBadgeTierMetadataUpdated(event: BadgeTierMetadataUpdatedEv
     if (!entity) return
     entity.uri = event.params.newURI
     entity.save()
+}
+
+export function handleBadgeTierRemoved(event: BadgeTierRemovedEvent): void {
+    const tierEntityId = event.params.badgeId.toHexString().concat(event.params.tier.toString());
+    store.remove("BadgeTier", tierEntityId);
 }

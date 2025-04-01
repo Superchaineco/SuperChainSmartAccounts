@@ -1,7 +1,7 @@
 import {Script, console} from "forge-std/Script.sol";
 import {DeployBadges} from "./DeployBadges.s.sol";
 import {DeployModule} from "./DeployModule.s.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges/SuperChainBadges.sol";
 import {SuperChainModuleUpgradeable} from "../src/SuperChainModuleUpgradeable.sol";
 import {SuperChainResolver} from "../src/SuperChainResolver.sol";
 import {JSONReader, JSON} from "./JSONReader.s.sol";

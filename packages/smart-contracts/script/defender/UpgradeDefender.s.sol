@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import {Script} from "forge-std/Script.sol";
 import {console} from "forge-std/console.sol";
 
-import {SuperChainModuleUpgradeable} from "../src/SuperChainModuleUpgradeable.sol";
+import {SuperChainModuleUpgradeable} from "../../src/SuperChainModuleUpgradeable.sol";
 
 import {ProposeUpgradeResponse, Defender, Options} from "openzeppelin-foundry-upgrades/Defender.sol";
 

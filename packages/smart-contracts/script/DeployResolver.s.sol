@@ -1,6 +1,6 @@
 import {Script, console} from "forge-std/Script.sol";
 import {SuperChainResolver} from "../src/SuperChainResolver.sol";
-import {SuperChainBadges} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges} from "../src/SuperChainBadges/SuperChainBadges.sol";
 import {IEAS} from "eas-contracts/IEAS.sol";
 
 contract DeployResolver is Script {

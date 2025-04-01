@@ -2,7 +2,7 @@
 pragma solidity ^0.8.20;
 import {Script, console} from "forge-std/Script.sol";
 import "./JSONReader.s.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges/SuperChainBadges.sol";
 
 contract AddBadges is Script {
     function setUp() public {}

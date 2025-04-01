@@ -108,6 +108,16 @@
   },
   {
     "type": "function",
+    "name": "removeBadgeTier",
+    "inputs": [
+      { "name": "badgeId", "type": "uint256", "internalType": "uint256" },
+      { "name": "tier", "type": "uint256", "internalType": "uint256" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
     "name": "renounceOwnership",
     "inputs": [],
     "outputs": [],
@@ -235,6 +245,16 @@
   },
   {
     "type": "function",
+    "name": "updateBadgeMetadata",
+    "inputs": [
+      { "name": "badgeId", "type": "uint256", "internalType": "uint256" },
+      { "name": "generalURI", "type": "string", "internalType": "string" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
     "name": "updateBadgeTierMetadata",
     "inputs": [
       { "name": "badgeId", "type": "uint256", "internalType": "uint256" },
@@ -333,6 +353,25 @@
   },
   {
     "type": "event",
+    "name": "BadgeMetadataUpdated",
+    "inputs": [
+      {
+        "name": "badgeId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "generalURI",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
     "name": "BadgeMinted",
     "inputs": [
       {
@@ -389,6 +428,25 @@
         "type": "string",
         "indexed": false,
         "internalType": "string"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "BadgeTierRemoved",
+    "inputs": [
+      {
+        "name": "badgeId",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      },
+      {
+        "name": "tier",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
       }
     ],
     "anonymous": false

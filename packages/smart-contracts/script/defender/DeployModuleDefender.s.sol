@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import {Defender, ApprovalProcessResponse} from "openzeppelin-foundry-upgrades/Defender.sol";
 import {Upgrades, Options} from "openzeppelin-foundry-upgrades/Upgrades.sol";
 import {Script, console} from "forge-std/Script.sol";
-import {SuperChainModuleUpgradeable} from "../src/SuperChainModuleUpgradeable.sol";
+import {SuperChainModuleUpgradeable} from "../../src/SuperChainModuleUpgradeable.sol";
 
 contract DeployModule is Script {
     function setUp() public {}

@@ -1,7 +1,7 @@
-import "./JSONReader.s.sol";
+import "../JSONReader.s.sol";
 import {Defender, ApprovalProcessResponse} from "openzeppelin-foundry-upgrades/Defender.sol";
 import {Upgrades, Options} from "openzeppelin-foundry-upgrades/Upgrades.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../../src/SuperChainBadges/SuperChainBadgesV2.sol";
 import {Script, console} from "forge-std/Script.sol";
 
 contract DeployBadges is Script {

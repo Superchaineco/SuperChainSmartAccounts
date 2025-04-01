@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 import {Script, console} from "forge-std/Script.sol";
 import "./JSONReader.s.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges/SuperChainBadges.sol";
 
 contract UpdateBadges is Script {
     function setUp() public {}
@@ -14,12 +14,12 @@ contract UpdateBadges is Script {
 
         vm.startBroadcast();
 
-        for (uint256 i = 0; i < badgesJson.badges.length; i++) {
-            SuperChainBadges(badgesProxy).setBadgeMetadata(
-                badgesJson.badges[i].id,
-                badgesJson.badges[i].URI
-            );
-        }
+        // for (uint256 i = 0; i < badgesJson.badges.length; i++) {
+        //     SuperChainBadges(badgesProxy).setBadgeMetadata(
+        //         badgesJson.badges[i].id,
+        //         badgesJson.badges[i].URI
+        //     );
+        // }
 
         for (uint256 i = 0; i < badgesJson.badges.length; i++) {
             for (uint256 j = 0; j < badgesJson.badges[i].levels.length; j++) {

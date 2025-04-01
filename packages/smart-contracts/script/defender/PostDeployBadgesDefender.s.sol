@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.20;
 import {Script, console} from "forge-std/Script.sol";
-import {SuperChainModuleUpgradeable} from "../src/SuperChainModuleUpgradeable.sol";
-import {SuperChainResolver} from "../src/SuperChainResolver.sol";
+import {SuperChainModuleUpgradeable} from "../../src/SuperChainModuleUpgradeable.sol";
+import {SuperChainResolver} from "../../src/SuperChainResolver.sol";
 import {IEAS} from "eas-contracts/IEAS.sol";
-import "./DeployJSONReader.s.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges.sol";
+import {JSONReader, JSON} from "../JSONReader.s.sol";
+import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../../src/SuperChainBadges/SuperChainBadges.sol";
 
 contract PostDeployBadges is Script {
     function setUp() public {}

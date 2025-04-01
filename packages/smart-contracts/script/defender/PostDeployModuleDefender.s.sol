@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
-import {SuperChainResolver} from "../src/SuperChainResolver.sol";
-import {SuperChainModuleUpgradeable} from "../src/SuperChainModuleUpgradeable.sol";
+import {SuperChainResolver} from "../../src/SuperChainResolver.sol";
+import {SuperChainModuleUpgradeable} from "../../src/SuperChainModuleUpgradeable.sol";
 import {Script, console} from "forge-std/Script.sol";
-import {SuperChainBadges} from "../src/SuperChainBadges.sol";
+import {SuperChainBadges} from "../../src/SuperChainBadges/SuperChainBadges.sol";
 
 contract PostDeployModule is Script {
     function setUp() public {}

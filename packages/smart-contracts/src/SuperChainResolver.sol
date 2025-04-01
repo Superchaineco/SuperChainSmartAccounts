@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import {SchemaResolver} from "eas-contracts/resolver/SchemaResolver.sol";
 import {IEAS, Attestation} from "eas-contracts/IEAS.sol";
 import {SuperChainModuleUpgradeable} from "./SuperChainModuleUpgradeable.sol";
-import "./SuperChainBadges.sol";
+import {SuperChainBadges, BadgeUpdate} from "./SuperChainBadges/SuperChainBadges.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SuperChainResolver is SchemaResolver, Ownable {
