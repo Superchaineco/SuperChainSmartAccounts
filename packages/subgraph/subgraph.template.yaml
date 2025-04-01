@@ -75,6 +75,8 @@ dataSources:
           handler: handleBadgeMinted
         - event: BadgeTierMetadataUpdated(indexed uint256,uint256,string)
           handler: handleBadgeTierMetadataUpdated
+        - event: BadgeMetadataUpdated(indexed uint256,string)
+          handler: handleBadgeMetadataUpdated
         - event: BadgeTierRemoved(indexed uint256,uint256)
           handler: handleBadgeTierRemoved
       file: ./src/super-chain-badges.ts

@@ -6,6 +6,7 @@ import {
     BadgeMetadataSettled as BadgeMetadataSettledEvent,
     BadgeTierMetadataUpdated as BadgeTierMetadataUpdatedEvent,
     BadgeTierRemoved as BadgeTierRemovedEvent,
+    BadgeMetadataUpdated as BadgeMetadataUpdatedEvent,
 } from "../generated/SuperChainBadges/SuperChainBadges"
 import {
     BadgeTier, Badge, AccountBadge,
@@ -68,6 +69,12 @@ export function handleBadgeTierMetadataUpdated(event: BadgeTierMetadataUpdatedEv
     entity.save()
 }
 
+export function handleBadgeMetadataUpdated(event: BadgeMetadataUpdatedEvent): void {
+    let entity = Badge.load(event.params.badgeId.toHexString())
+    if (!entity) return
+    entity.uri = event.params.generalURI
+    entity.save()
+}
 export function handleBadgeTierRemoved(event: BadgeTierRemovedEvent): void {
     const tierEntityId = event.params.badgeId.toHexString().concat(event.params.tier.toString());
     store.remove("BadgeTier", tierEntityId);
