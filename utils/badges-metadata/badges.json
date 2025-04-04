@@ -234,6 +234,38 @@
       "season": null
     },
     {
+      "name": "Unichain User",
+      "description": "Number of transactions made on Unichain",
+      "platform": "Unichain",
+      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
+      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transactions made on Unichain",
+      "chains": ["Unichain"],
+      "season": null
+    },
+    {
       "name": "Super Cohort 24",
       "description": "Graduated from Super Cohort 0",
       "platform": "Optimism",
@@ -345,7 +377,7 @@
       "chains": ["Soneium"],
       "season": null
     },
-   {
+    {
       "name": "Ink User",
       "description": "Number of transactions made on Ink",
       "platform": "Ink",
@@ -375,38 +407,6 @@
       ],
       "condition": "{{variable}} transactions made on Ink",
       "chains": ["Ink"],
-      "season": null
-    },
-   {
-      "name": "Unichain User",
-      "description": "Number of transactions made on Unichain",
-      "platform": "Unichain",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
-      "levels": [
-        {
-          "minValue": 5,
-          "points": 10
-        },
-        {
-          "minValue": 20,
-          "points": 20
-        },
-        {
-          "minValue": 50,
-          "points": 30
-        },
-        {
-          "minValue": 100,
-          "points": 40
-        },
-        {
-          "minValue": 250,
-          "points": 50
-        }
-      ],
-      "condition": "{{variable}} transactions made on Unichain",
-      "chains": ["Unichain"],
       "season": null
     },
     {

@@ -8,9 +8,9 @@ dataSources:
     name: SuperChainSmartAccountModule
     network: optimism
     source:
-      address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
+      address: "0x1Ee397850c3CA629d965453B3cF102E9A8806Ded"
       abi: SuperChainSmartAccountModule
-      startBlock: 133669144
+      startBlock: 125901332
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -50,9 +50,9 @@ dataSources:
     name: SuperChainBadges
     network: optimism
     source:
-      address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
+      address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
       abi: SuperChainBadges
-      startBlock: 133669144
+      startBlock: 125901059
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
