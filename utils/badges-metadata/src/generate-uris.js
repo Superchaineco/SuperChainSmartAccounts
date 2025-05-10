@@ -3,7 +3,7 @@ import path from 'path';
 
 const BADGES_FILE_PATH = './badges.json';
 const OUTPUT_FILE = './badges-with-uris.json';
-const IPFS_BASE_URI = 'ipfs/QmTpuYQ5E2Rvbu99c1M5xqXX44kSJBjX24F476QsS9YNKb';
+const IPFS_BASE_URI = 'ipfs/QmVW3EUWqxQvUdzMn3PJvsd2PPKKKUMaZaBxPkeykjE1jk';
 
 function generateFileName(badgeId, levelId) {
   const paddedBadgeId = badgeId.toString().padStart(64, '0');

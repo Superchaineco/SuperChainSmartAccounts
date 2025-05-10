@@ -4,8 +4,8 @@
       "name": "Base User",
       "description": "Number of transactions made on Base",
       "platform": "Base",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Base-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Base-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -27,8 +27,8 @@
         },
 
         {
-          "2DImage": "https://staging.account.superchain.eco/static/badges/2DImages/BaseUser-5.svg",
-          "3DImage": "https://staging.account.superchain.eco/static/badges/3DImages/BaseUser-5.svg",
+          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-5.svg",
+          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-5.svg",
           "minValue": 250,
           "points": 50
         }
@@ -41,8 +41,8 @@
       "name": "OP Mainnet User",
       "description": "Number of transactions made on OP Mainnet",
       "platform": "Optimism",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Mainnet-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -76,8 +76,8 @@
       "name": "Mode User",
       "description": "Number of transactions made on Mode",
       "platform": "Mode",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Mode-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Mode-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Mode-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Mode-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -100,8 +100,8 @@
       "name": "Hold Nouns",
       "description": "Hold Nouns on Ethereum Mainnet",
       "platform": "Nouns",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Noun-Holder/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -124,8 +124,8 @@
       "name": "Citizen",
       "description": "Become a Optimism Citizen",
       "platform": "Optimism",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -140,8 +140,8 @@
       "name": "Giveth Donor",
       "description": "Donations on Giveth",
       "platform": "Giveth",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Giveth-Donor/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 25,
@@ -169,8 +169,8 @@
       "name": "Builder Score",
       "description": "Builder score by Talent Protocol",
       "platform": "Talent Protocol",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Builder-Score/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Builder-Score/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Builder-Score/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Builder-Score/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 30,
@@ -193,8 +193,8 @@
       "name": "Worldcoin Verification",
       "description": "Verify on Worldcoin",
       "platform": "Worldcoin",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -209,8 +209,8 @@
       "name": "Gitcoin Donor",
       "description": "Donations on Gitcoin",
       "platform": "Gitcoin",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Gitcoin-Donor/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 25,
@@ -237,8 +237,8 @@
       "name": "Unichain User",
       "description": "Number of transactions made on Unichain",
       "platform": "Unichain",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Unichain-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Unichain-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -269,8 +269,8 @@
       "name": "Super Cohort 24",
       "description": "Graduated from Super Cohort 0",
       "platform": "Optimism",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -285,8 +285,8 @@
       "name": "Lisk User",
       "description": "Number of transactions made on Lisk",
       "platform": "Lisk",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lisk-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lisk-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -317,8 +317,8 @@
       "name": "Lisk Aidrop S1",
       "description": "Join the Verified Airdrop participant Guild",
       "platform": "Lisk",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -333,8 +333,8 @@
       "name": "Early Power user",
       "description": "The first 100 accounts to reach level 3",
       "platform": "Super Accounts",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Early-Power-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 1,
@@ -349,8 +349,8 @@
       "name": "Soneium User",
       "description": "Number of transactions made on Soneium",
       "platform": "Soneium",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Soneium-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Soneium-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Soneium-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Soneium-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -381,8 +381,8 @@
       "name": "Ink User",
       "description": "Number of transactions made on Ink",
       "platform": "Ink",
-      "image": "https://staging.account.superchain.eco/static/badges/All-Time/Ink-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/All-Time/Ink-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Ink-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Ink-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 5,
@@ -413,8 +413,8 @@
       "name": "S7 Super User",
       "description": "Number of transactions made on Superchain in Season 7",
       "platform": "Superchain",
-      "image": "https://staging.account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge.svg",
-      "stack-image": "https://staging.account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge-Stack.svg",
+      "image": "https://account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-7/S7-Super-User/Badge-Stack.svg",
       "levels": [
         {
           "minValue": 25,
