@@ -3,7 +3,7 @@ import path from 'path';
 
 const BADGES_FILE_PATH = './badges.json';
 const OUTPUT_FILE = './badges-with-uris.json';
-const IPFS_BASE_URI = 'ipfs/QmVW3EUWqxQvUdzMn3PJvsd2PPKKKUMaZaBxPkeykjE1jk';
+const IPFS_BASE_URI = 'ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek';
 
 function generateFileName(badgeId, levelId) {
   const paddedBadgeId = badgeId.toString().padStart(64, '0');
@@ -20,11 +20,11 @@ async function generateBadgesWithUris() {
   for (let i = 0; i < badges.length; i++) {
     const badgeId = i + 1;
     const badge = badges[i];
-    
+
     const levels = badge.levels.map((level, index) => {
       const levelId = index + 1;
       const fileName = generateFileName(badgeId, levelId);
-      
+
       return {
         minValue: level.minValue,
         points: level.points,
@@ -33,7 +33,7 @@ async function generateBadgesWithUris() {
     });
 
     const generalFileName = generateFileName(badgeId, 0);
-    
+
     badgesWithUris.push({
       name: badge.name,
       description: badge.description,

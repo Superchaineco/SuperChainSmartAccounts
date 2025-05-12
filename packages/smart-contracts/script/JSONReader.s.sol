@@ -30,8 +30,8 @@ struct JSON {
 contract JSONReader is Script {
     function setUp() public {}
 
-    function run() public  view returns (JSON memory, uint256) {
-        string memory json = vm.readFile("badges-with-uris.json");
+    function run(string memory filename) public  view returns (JSON memory, uint256) {
+        string memory json = vm.readFile(filename);
         bytes memory data = vm.parseJson(json);
         JSON memory badgesJson = abi.decode(data, (JSON));
         uint256 tierCount = 0;

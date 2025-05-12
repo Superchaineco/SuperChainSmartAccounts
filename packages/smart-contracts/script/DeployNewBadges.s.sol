@@ -1,16 +1,18 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 import {Script, console} from "forge-std/Script.sol";
-import "./JSONReader.s.sol";
-import {SuperChainBadges, BadgeMetadata, BadgeTierMetadata} from "../src/SuperChainBadges/SuperChainBadgesV2.sol";
+import {SuperChainBadges} from "../src/SuperChainBadges/SuperChainBadgesV2.sol";
+import  "./JSONReader.s.sol";
 
-contract UpdateBadges is Script {
+contract DeployNewBadges is Script {
     function setUp() public {}
 
-    function run() public returns (address) {
+    function run() public {
         address badgesProxy = vm.envAddress("BADGES_ADDRESS");
         JSONReader jsonReader = new JSONReader();
-        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run("badges-with-uris.json");
+        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run(
+            "badges.json"
+        );
 
         vm.startBroadcast();
 

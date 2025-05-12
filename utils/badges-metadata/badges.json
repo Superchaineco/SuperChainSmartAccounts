@@ -440,6 +440,38 @@
       "condition": "{{variable}} transactions made on Superchain in Season 7",
       "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
       "season": 7
+    },
+    {
+      "name": "SuperStacks ",
+      "description": "XP earned during SuperStacks campaign",
+      "platform": "Superchain",
+      "image": "https://account.superchain.eco/static/badges/Season-7/SuperStacks/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-7/SuperStacks/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 100000,
+          "points": 20
+        },
+        {
+          "minValue": 1000000,
+          "points": 40
+        },
+        {
+          "minValue": 5000000,
+          "points": 60
+        },
+        {
+          "minValue": 10000000,
+          "points": 80
+        },
+        {
+          "minValue": 25000000,
+          "points": 100
+        }
+      ],
+      "condition": "{{variable}} XP earned during SuperStacks campaign",
+      "chains": ["Optimism", "Base", "Ink", "Unichain", "Soneium", "Worldcoin"],
+      "season": 7
     }
   ]
 }
