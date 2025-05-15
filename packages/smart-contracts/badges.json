@@ -1,49 +1,42 @@
 {
   "badges": [
     {
-      "name": "SuperStacks ",
-      "description": "XP earned during SuperStacks campaign",
-      "platform": "Superchain",
+      "name": "Lisk Surge",
+      "description": "LSK earned during the Lisk Surge campaign",
+      "platform": "Lisk",
       "levels": [
         {
-          "minValue": 100000,
+          "minValue": 10,
           "points": 20,
-          "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000001.json"
+          "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000001.json"
         },
         {
-          "minValue": 1000000,
+          "minValue": 100,
           "points": 40,
-          "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000002.json"
+          "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000002.json"
         },
         {
-          "minValue": 5000000,
+          "minValue": 1000,
           "points": 60,
-          "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000003.json"
+          "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000003.json"
         },
         {
-          "minValue": 10000000,
+          "minValue": 10000,
           "points": 80,
-          "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000004.json"
+          "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000004.json"
         },
         {
-          "minValue": 25000000,
+          "minValue": 25000,
           "points": 100,
-          "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000005.json"
+          "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "{{variable}} XP earned during SuperStacks campaign",
-      "chains": [
-        "Optimism",
-        "Base",
-        "Ink",
-        "Unichain",
-        "Soneium",
-        "Worldcoin"
-      ],
-      "id": 18,
-      "URI": "ipfs/QmWeTXLReNDAMnaZZWXgchhdYTTfRCo87Xrs8GStLg9bek/00000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/Season-7/SuperStacks/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/Season-7/SuperStacks/Badge-Stack.svg",
+      "condition": "{{variable}} LSK earned during the Lisk Surge campaign",
+      "chains": ["Lisk"],
+      "id": 19,
+      "URI": "ipfs/QmSnTHCwLAv2D3eovvv2BBsvaTye1SB4ELVdPH3rjYg1uG/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge-Stack.svg",
       "season": 7
     }
   ]

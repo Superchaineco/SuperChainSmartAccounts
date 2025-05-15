@@ -12,7 +12,7 @@ dotenv.config();
 const JWT = process.env.PINATA_JWT;
 
 const BADGES_FILE_PATH = './badges.json';
-const OUTPUT_FOLDER = './data/super-chain-badges-v1.2';
+const OUTPUT_FOLDER = './data/super-chain-badges-v1.3';
 
 async function uploadFolderToIPFS(folderPath) {
   const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
@@ -33,7 +33,8 @@ async function uploadFolderToIPFS(folderPath) {
     const response = await got(url, {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${JWT}`,
+        'pinata_api_key': PINATA_API_KEY,
+        'pinata_secret_api_key': PINATA_API_SECRET
       },
       body: data,
     }).on('uploadProgress', (progress) => {

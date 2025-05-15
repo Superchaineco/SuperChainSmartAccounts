@@ -442,7 +442,7 @@
       "season": 7
     },
     {
-      "name": "SuperStacks ",
+      "name": "SuperStacks",
       "description": "XP earned during SuperStacks campaign",
       "platform": "Superchain",
       "image": "https://account.superchain.eco/static/badges/Season-7/SuperStacks/Badge.svg",
@@ -471,6 +471,38 @@
       ],
       "condition": "{{variable}} XP earned during SuperStacks campaign",
       "chains": ["Optimism", "Base", "Ink", "Unichain", "Soneium", "Worldcoin"],
+      "season": 7
+    },
+    {
+      "name": "Lisk Surge",
+      "description": "LSK earned during the Lisk Surge campaign",
+      "platform": "Lisk",
+      "image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 10,
+          "points": 20
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 1000,
+          "points": 60
+        },
+        {
+          "minValue": 10000,
+          "points": 80
+        },
+        {
+          "minValue": 25000,
+          "points": 100
+        }
+      ],
+      "condition": "{{variable}} LSK earned during the Lisk Surge campaign",
+      "chains": ["Lisk"],
       "season": 7
     }
   ]
