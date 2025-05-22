@@ -50,7 +50,7 @@ contract E2EDeployment is Script {
 
     function setBadgesAndTiers(address proxyAddress, address resolver) public {
         JSONReader jsonReader = new JSONReader();
-        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run();
+        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run('');
         BadgeMetadata[] memory badges = new BadgeMetadata[](
             badgesJson.badges.length
         );

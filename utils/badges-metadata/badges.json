@@ -325,7 +325,7 @@
           "points": 50
         }
       ],
-      "condition": "Join Lisk Aidrop on Guild",
+      "condition": "Join Lisk Airdrop on Guild",
       "chains": ["Lisk"],
       "season": null
     },
@@ -481,23 +481,23 @@
       "stack-image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge-Stack.svg",
       "levels": [
         {
-          "minValue": 10,
+          "minValue": 5,
           "points": 20
         },
         {
-          "minValue": 100,
+          "minValue": 25,
           "points": 40
         },
         {
-          "minValue": 1000,
+          "minValue": 100,
           "points": 60
         },
         {
-          "minValue": 10000,
+          "minValue": 1000,
           "points": 80
         },
         {
-          "minValue": 25000,
+          "minValue": 5000,
           "points": 100
         }
       ],
