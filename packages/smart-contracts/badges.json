@@ -1,62 +1,62 @@
 {
   "badges": [
     {
-      "name": "Lisk Aidrop S1",
-      "description": "Join the Verified Airdrop participant Guild",
-      "platform": "Lisk",
+      "name": "Based Nouns Holder",
+      "description": "Hold Based Nouns on Base",
+      "platform": "Nouns",
       "levels": [
         {
           "minValue": 1,
-          "points": 50,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000001.json"
+          "points": 10,
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 3,
+          "points": 20,
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 5,
+          "points": 30,
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003.json"
         }
       ],
-      "condition": "Join Lisk Airdrop on Guild",
-      "chains": ["Lisk"],
-      "id": 13,
-      "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000130000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lisk-Aidrop-S1/Badge-Stack.svg",
+      "condition": "Hold {{variable}} Based Nouns on Base",
+      "chains": ["Base"],
+      "id": 20,
+      "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge-Stack.svg",
       "season": null
     },
     {
-      "name": "Lisk Surge",
-      "description": "LSK earned during the Lisk Surge campaign",
-      "platform": "Lisk",
+      "name": "Lil Nouns Holder",
+      "description": "Lil Nouns on Ethereum Mainnet",
+      "platform": "Nouns",
       "levels": [
         {
-          "minValue": 5,
+          "minValue": 1,
+          "points": 10,
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 3,
           "points": 20,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000001.json"
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000002.json"
         },
         {
-          "minValue": 25,
-          "points": 40,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 100,
-          "points": 60,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 1000,
-          "points": 80,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000004.json"
-        },
-        {
-          "minValue": 5000,
-          "points": 100,
-          "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000005.json"
+          "minValue": 5,
+          "points": 30,
+          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000003.json"
         }
       ],
-      "condition": "{{variable}} LSK earned during the Lisk Surge campaign",
-      "chains": ["Lisk"],
-      "id": 19,
-      "URI": "ipfs/QmbvXGCWqYwbewMXPGSj7ePXCLMaqJVJ5nduUmeh2Yc4q9/00000000000000000000000000000000000000000000000000000000000000190000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/Season-7/Lisk-Surge/Badge-Stack.svg",
-      "season": 7
+      "condition": "Hold {{variable}} Lil Nouns on Ethereum Mainnet",
+      "chains": ["Ethereum"],
+      "id": 21,
+      "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge-Stack.svg",
+      "season": null
     }
   ]
 }

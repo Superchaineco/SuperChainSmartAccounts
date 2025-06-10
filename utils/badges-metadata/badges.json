@@ -504,6 +504,54 @@
       "condition": "{{variable}} LSK earned during the Lisk Surge campaign",
       "chains": ["Lisk"],
       "season": 7
+    },
+    {
+      "name": "Based Nouns Holder",
+      "description": "Hold Based Nouns on Base",
+      "platform": "Nouns",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 10
+        },
+        {
+          "minValue": 3,
+          "points": 20
+        },
+        {
+          "minValue": 5,
+          "points": 30
+        }
+      ],
+      "condition": "Hold {{variable}} Based Nouns on Base",
+      "chains": ["Base"],
+      "season": null
+    },
+    {
+      "name": "Lil Nouns Holder",
+      "description": "Lil Nouns on Ethereum Mainnet",
+      "platform": "Nouns",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 10
+        },
+        {
+          "minValue": 3,
+          "points": 20
+        },
+        {
+          "minValue": 5,
+          "points": 30
+        }
+      ],
+      "condition": "Hold {{variable}} Lil Nouns on Ethereum Mainnet",
+      "chains": ["Ethereum"],
+      "season": null
     }
   ]
 }
