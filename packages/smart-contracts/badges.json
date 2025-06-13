@@ -1,61 +1,22 @@
 {
   "badges": [
     {
-      "name": "Based Nouns Holder",
-      "description": "Hold Based Nouns on Base",
-      "platform": "Nouns",
+      "name": "Farcaster Link",
+      "description": "Link your Farcaster Account to your Super Account",
+      "platform": "Farcaster",
       "levels": [
         {
           "minValue": 1,
-          "points": 10,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 3,
-          "points": 20,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 5,
-          "points": 30,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003.json"
+          "points": 100,
+          "URI": "ipfs/QmYfVrCcPdFrtQyAtDr6PEAnZ8MqVUg9uiKcTbFbtSm6Fk/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000001.json"
         }
       ],
-      "condition": "Hold {{variable}} Based Nouns on Base",
+      "condition": "Link your Farcaster Account to your Super Account",
       "chains": ["Base"],
-      "id": 20,
-      "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Based-Noun-Holder/Badge-Stack.svg",
-      "season": null
-    },
-    {
-      "name": "Lil Nouns Holder",
-      "description": "Lil Nouns on Ethereum Mainnet",
-      "platform": "Nouns",
-      "levels": [
-        {
-          "minValue": 1,
-          "points": 10,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 3,
-          "points": 20,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 5,
-          "points": 30,
-          "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000003.json"
-        }
-      ],
-      "condition": "Hold {{variable}} Lil Nouns on Ethereum Mainnet",
-      "chains": ["Ethereum"],
-      "id": 21,
-      "URI": "ipfs/QmSc2G6ozeiotUVtpzDeXUF6FrK5R31R5kESHLVfn5B9o8/00000000000000000000000000000000000000000000000000000000000000210000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Lil-Noun-Holder/Badge-Stack.svg",
+      "id": 22,
+      "URI": "ipfs/QmYfVrCcPdFrtQyAtDr6PEAnZ8MqVUg9uiKcTbFbtSm6Fk/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge-Stack.svg",
       "season": null
     }
   ]

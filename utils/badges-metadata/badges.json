@@ -552,6 +552,22 @@
       "condition": "Hold {{variable}} Lil Nouns on Ethereum Mainnet",
       "chains": ["Ethereum"],
       "season": null
+    },
+    {
+      "name": "Farcaster Link",
+      "description": "Link your Farcaster Account to your Super Account",
+      "platform": "Farcaster",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 100
+        }
+      ],
+      "condition": "Link your Farcaster Account to your Super Account",
+      "chains": ["Base"],
+      "season": null
     }
   ]
 }
