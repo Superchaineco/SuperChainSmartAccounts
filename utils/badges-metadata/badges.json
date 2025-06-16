@@ -568,6 +568,41 @@
       "condition": "Link your Farcaster Account to your Super Account",
       "chains": ["Base"],
       "season": null
+    },
+    {
+      "name": "World User",
+      "description": "Number of transactions made on World",
+      "platform": "Worldcoin",
+      "image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+
+        {
+          "minValue": 50,
+          "points": 30
+        },
+
+        {
+          "minValue": 100,
+          "points": 40
+        },
+
+        {          
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transaction made on World",
+      "chains": ["Worldcoin"],
+      "season": null
     }
   ]
 }

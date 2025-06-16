@@ -1,22 +1,44 @@
 {
   "badges": [
     {
-      "name": "Farcaster Link",
-      "description": "Link your Farcaster Account to your Super Account",
-      "platform": "Farcaster",
+      "name": "World User",
+      "description": "Number of transactions made on World",
+      "platform": "Worldcoin",
       "levels": [
         {
-          "minValue": 1,
-          "points": 100,
-          "URI": "ipfs/QmYfVrCcPdFrtQyAtDr6PEAnZ8MqVUg9uiKcTbFbtSm6Fk/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000001.json"
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "Link your Farcaster Account to your Super Account",
-      "chains": ["Base"],
-      "id": 22,
-      "URI": "ipfs/QmYfVrCcPdFrtQyAtDr6PEAnZ8MqVUg9uiKcTbFbtSm6Fk/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge-Stack.svg",
+      "condition": "{{variable}} transaction made on World",
+      "chains": [
+        "Worldcoin"
+      ],
+      "id": 23,
+      "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge-Stack.svg",
       "season": null
     }
   ]
