@@ -1,44 +1,61 @@
 {
   "badges": [
     {
-      "name": "World User",
-      "description": "Number of transactions made on World",
-      "platform": "Worldcoin",
+      "name": "Base User",
+      "description": "Number of transactions made on Base",
+      "platform": "Base",
       "levels": [
         {
           "minValue": 5,
           "points": 10,
-          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000001.json"
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001.json"
         },
         {
           "minValue": 20,
           "points": 20,
-          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000002.json"
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002.json"
         },
         {
           "minValue": 50,
           "points": 30,
-          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000003.json"
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000003.json"
         },
         {
           "minValue": 100,
           "points": 40,
-          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000004.json"
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000004.json"
         },
         {
           "minValue": 250,
           "points": 50,
-          "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000005.json"
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "{{variable}} transaction made on World",
-      "chains": [
-        "Worldcoin"
+      "condition": "{{variable}} transactions made on Base",
+      "chains": ["Base"],
+      "id": 1,
+      "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge-Stack.svg",
+      "season": null
+    },
+    {
+      "name": "Worldcoin Verification",
+      "description": "Verify on Worldcoin",
+      "platform": "Worldcoin",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 60,
+          "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000001.json"
+        }
       ],
-      "id": 23,
-      "URI": "ipfs/QmUHF22H32Fz91DCVrwtVGgV5PzhdgCK5thRxC4fqLREWH/00000000000000000000000000000000000000000000000000000000000000230000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/World-User/Badge-Stack.svg",
+      "condition": "Get verified with Worldcoin",
+      "chains": ["Worldcoin"],
+      "id": 8,
+      "URI": "ipfs/QmTRaFqzn5DxhV8ezd9Nv3DfoiM9jdUhnH1ho648XDm5CH/00000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Worldcoin-Verification/Badge-Stack.svg",
       "season": null
     }
   ]

@@ -27,8 +27,6 @@
         },
 
         {
-          "2DImage": "https://account.superchain.eco/static/badges/2DImages/BaseUser-5.svg",
-          "3DImage": "https://account.superchain.eco/static/badges/3DImages/BaseUser-5.svg",
           "minValue": 250,
           "points": 50
         }
@@ -202,7 +200,7 @@
         }
       ],
       "condition": "Get verified with Worldcoin",
-      "chains": ["Ethereum"],
+      "chains": ["Worldcoin"],
       "season": null
     },
     {
@@ -595,7 +593,7 @@
           "points": 40
         },
 
-        {          
+        {
           "minValue": 250,
           "points": 50
         }
