@@ -552,8 +552,8 @@
       "season": null
     },
     {
-      "name": "Farcaster Link",
-      "description": "Link your Farcaster Account to your Super Account",
+      "name": "FarCaster Connection",
+      "description": "Link your FarCaster account",
       "platform": "Farcaster",
       "image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge.svg",
       "stack-image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge-Stack.svg",
@@ -563,8 +563,8 @@
           "points": 100
         }
       ],
-      "condition": "Link your Farcaster Account to your Super Account",
-      "chains": ["Base"],
+      "condition": "Link your FarCaster account",
+      "chains": ["Optimism"],
       "season": null
     },
     {
