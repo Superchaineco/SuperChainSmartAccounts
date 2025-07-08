@@ -3,15 +3,16 @@ import path from 'path';
 
 const BADGES_FILE_PATH = './badges.json';
 const OUTPUT_FILE = './badges-with-uris.json';
-const IPFS_BASE_URI = 'ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH';
+const IPFS_BASE_URI = 'ipfs/QmfAVDAjhgV1ujcvJMCXv31TWSk8j7yquL5m7t7N8EQPEJ';
 
 function generateFileName(badgeId, levelId) {
   const paddedBadgeId = badgeId.toString().padStart(64, '0');
   const paddedLevelId = levelId.toString().padStart(64, '0');
-  return `${paddedBadgeId.substring(0, 63 - paddedLevelId.length)}${paddedBadgeId}${paddedLevelId}.json`;
+  return `${paddedBadgeId.substring(
+    0,
+    63 - paddedLevelId.length
+  )}${paddedBadgeId}${paddedLevelId}.json`;
 }
-
-
 
 async function generateBadgesWithUris() {
   const badges = JSON.parse(fs.readFileSync(BADGES_FILE_PATH, 'utf8')).badges;
@@ -28,7 +29,7 @@ async function generateBadgesWithUris() {
       return {
         minValue: level.minValue,
         points: level.points,
-        URI: `${IPFS_BASE_URI}/${fileName}`
+        URI: `${IPFS_BASE_URI}/${fileName}`,
       };
     });
 
@@ -45,12 +46,15 @@ async function generateBadgesWithUris() {
       URI: `${IPFS_BASE_URI}/${generalFileName}`,
       image: badge.image,
       'stack-image': badge['stack-image'],
-      season: badge.season
+      season: badge.season,
     });
   }
 
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify({ badges: badgesWithUris }, null, 2));
+  fs.writeFileSync(
+    OUTPUT_FILE,
+    JSON.stringify({ badges: badgesWithUris }, null, 2)
+  );
   console.log(`Generated ${OUTPUT_FILE} with ${badgesWithUris.length} badges`);
 }
 
-generateBadgesWithUris().catch(console.error); 
+generateBadgesWithUris().catch(console.error);

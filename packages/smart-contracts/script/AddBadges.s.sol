@@ -10,7 +10,9 @@ contract AddBadges is Script {
     function run() public returns (address) {
         address badgesProxy = vm.envAddress("BADGES_ADDRESS");
         JSONReader jsonReader = new JSONReader();
-        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run('');
+        (JSON memory badgesJson, uint256 tierCount) = jsonReader.run(
+            "badges.json"
+        );
         BadgeMetadata[] memory badges = new BadgeMetadata[](
             badgesJson.badges.length
         );

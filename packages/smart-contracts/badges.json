@@ -1,62 +1,23 @@
 {
   "badges": [
     {
-      "name": "Base User",
-      "description": "Number of transactions made on Base",
-      "platform": "Base",
-      "levels": [
-        {
-          "minValue": 5,
-          "points": 10,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 20,
-          "points": 20,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 50,
-          "points": 30,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 100,
-          "points": 40,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000004.json"
-        },
-        {
-          "minValue": 250,
-          "points": 50,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000005.json"
-        }
-      ],
-      "condition": "{{variable}} transactions made on Base",
-      "chains": ["Base"],
-      "id": 1,
-      "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Base-User/Badge-Stack.svg",
-      "season": null
-    },
-    {
-      "name": "FarCaster Connection",
-      "description": "Link your FarCaster account",
-      "platform": "Farcaster",
+      "name": "Citizen",
+      "description": "Become a Optimism Citizen",
+      "platform": "Optimism",
       "levels": [
         {
           "minValue": 1,
-          "points": 100,
-          "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000001.json"
+          "points": 150,
+          "URI": "ipfs/QmfAVDAjhgV1ujcvJMCXv31TWSk8j7yquL5m7t7N8EQPEJ/00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000001.json"
         }
       ],
-      "condition": "Link your FarCaster account",
+      "condition": "Be the owner of a {{variable}} wallet who is a Citizen",
       "chains": ["Optimism"],
-      "id": 22,
-      "URI": "ipfs/QmZfXPDLm3W44SYTtPjinTERGM3eMzQCwHtcWoWnevqdgH/00000000000000000000000000000000000000000000000000000000000000220000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Farcaster-Link/Badge-Stack.svg",
-      "season": null
+      "id": 5,
+      "URI": "ipfs/QmfAVDAjhgV1ujcvJMCXv31TWSk8j7yquL5m7t7N8EQPEJ/00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge-Stack.svg",
+      "season": 8
     }
   ]
 }

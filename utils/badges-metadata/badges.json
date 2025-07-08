@@ -132,7 +132,7 @@
       ],
       "condition": "Be the owner of a {{variable}} wallet who is a Citizen",
       "chains": ["Optimism"],
-      "season": null
+      "season": 8
     },
     {
       "name": "Giveth Donor",
