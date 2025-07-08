@@ -20,7 +20,7 @@ import {
   TierTresholds,
   Meta,
 } from "../generated/schema";
-import { BigInt, store } from "@graphprotocol/graph-ts";
+import {BigInt, store} from "@graphprotocol/graph-ts";
 
 const TIER_TRESHOLDS = "TierTresholds";
 
@@ -50,7 +50,9 @@ export function handleTierTresholdAdded(event: TierTresholdAddedEvent): void {
   entity.save();
 }
 
-export function handleTierTresholdUpdated(event: TierTresholdUpdatedEvent): void {
+export function handleTierTresholdUpdated(
+  event: TierTresholdUpdatedEvent,
+): void {
   let entity = TierTresholds.load(TIER_TRESHOLDS);
   if (entity == null) {
     entity = new TierTresholds(TIER_TRESHOLDS);
@@ -151,17 +153,17 @@ export function handlePointsIncremented(event: PointsIncrementedEvent): void {
   );
   entity.recipient = event.params.recipient;
   entity.points = event.params.points;
-  entity.levelUp = event.params.levelUp
+  entity.levelUp = event.params.levelUp;
   entity.blockNumber = event.block.number;
   entity.blockTimestamp = event.block.timestamp;
   entity.transactionHash = event.transaction.hash;
   let superChainSmartAccount = SuperChainSmartAccount.load(entity.recipient);
   if (superChainSmartAccount == null) {
     superChainSmartAccount = new SuperChainSmartAccount(entity.recipient);
-    superChainSmartAccount.level = BigInt.fromI32(0)
+    superChainSmartAccount.level = BigInt.fromI32(0);
+    superChainSmartAccount.safe = entity.recipient;
     superChainSmartAccount.points = BigInt.fromI32(0);
   }
-
 
   superChainSmartAccount.points = superChainSmartAccount.points.plus(
     entity.points,
@@ -173,27 +175,24 @@ export function handlePointsIncremented(event: PointsIncrementedEvent): void {
     let newLevel = BigInt.fromI32(0);
     superChainSmartAccount.level = newLevel;
 
-  
-
     for (let i = 0; i < thresholds.length; i++) {
       if (currentPoints >= thresholds[i]) {
         newLevel = BigInt.fromI32(i + 1);
-        let levelClaimId = (event.params.recipient.concatI32(newLevel.toI32()));
+        let levelClaimId = event.params.recipient.concatI32(newLevel.toI32());
         let levelClaim = LevelClaim.load(levelClaimId);
-    
+
         if (levelClaim == null) {
           levelClaim = new LevelClaim(levelClaimId);
           levelClaim.account = superChainSmartAccount.id;
           levelClaim.level = newLevel;
           levelClaim.timestamp = event.block.timestamp;
           levelClaim.save();
-        }    
+        }
       } else {
         break;
       }
     }
     superChainSmartAccount.level = newLevel;
-
   }
   superChainSmartAccount.save();
   entity.superChainSmartAccount = superChainSmartAccount.id;
