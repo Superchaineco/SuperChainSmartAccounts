@@ -601,6 +601,38 @@
       "condition": "{{variable}} transaction made on World",
       "chains": ["Worldcoin"],
       "season": null
+    },
+    {
+      "name": "S8 Super User",
+      "description": "Number of transactions made on Superchain in Season 8",
+      "platform": "Superchain",
+      "image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 25,
+          "points": 20
+        },
+        {
+          "minValue": 70,
+          "points": 40
+        },
+        {
+          "minValue": 150,
+          "points": 60
+        },
+        {
+          "minValue": 350,
+          "points": 80
+        },
+        {
+          "minValue": 1000,
+          "points": 100
+        }
+      ],
+      "condition": "{{variable}} transactions made on Superchain in Season 8",
+      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
+      "season": 7
     }
   ]
 }

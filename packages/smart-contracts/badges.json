@@ -1,23 +1,43 @@
 {
   "badges": [
     {
-      "name": "Citizen",
-      "description": "Become a Optimism Citizen",
-      "platform": "Optimism",
+      "name": "S8 Super User",
+      "description": "Number of transactions made on Superchain in Season 8",
+      "platform": "Superchain",
       "levels": [
         {
-          "minValue": 1,
-          "points": 150,
-          "URI": "ipfs/QmfAVDAjhgV1ujcvJMCXv31TWSk8j7yquL5m7t7N8EQPEJ/00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000001.json"
+          "minValue": 25,
+          "points": 20,
+          "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 70,
+          "points": 40,
+          "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 150,
+          "points": 60,
+          "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 350,
+          "points": 80,
+          "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 1000,
+          "points": 100,
+          "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "Be the owner of a {{variable}} wallet who is a Citizen",
-      "chains": ["Optimism"],
-      "id": 5,
-      "URI": "ipfs/QmfAVDAjhgV1ujcvJMCXv31TWSk8j7yquL5m7t7N8EQPEJ/00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/OP-Citizen/Badge-Stack.svg",
-      "season": 8
+      "condition": "{{variable}} transactions made on Superchain in Season 8",
+      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
+      "id": 24,
+      "URI": "ipfs/QmYCySixHkxdcykvdQQRa6oskngN4HQ1QF5Lo2vSpE54uc/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge-Stack.svg",
+      "season": 7
     }
   ]
 }
