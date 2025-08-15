@@ -1,43 +1,40 @@
 {
   "badges": [
-    {
-      "name": "S8 Super User",
-      "description": "Number of transactions made on Superchain in Season 8",
-      "platform": "Superchain",
+       {
+      "name": "Creator Score",
+      "description": "Creator score by Talent Protocol",
+      "platform": "Talent Protocol",
       "levels": [
         {
-          "minValue": 25,
+          "minValue": 10,
+          "points": 10,
+          "URI": "ipfs/QmaPWyPXvBXHjd19jDJE5NWKdCLJxmqXE6rizoegfUzv14/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 40,
           "points": 20,
-          "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000001.json"
+          "URI": "ipfs/QmaPWyPXvBXHjd19jDJE5NWKdCLJxmqXE6rizoegfUzv14/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000002.json"
         },
         {
-          "minValue": 70,
+          "minValue": 80,
+          "points": 30,
+          "URI": "ipfs/QmaPWyPXvBXHjd19jDJE5NWKdCLJxmqXE6rizoegfUzv14/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 120,
           "points": 40,
-          "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 150,
-          "points": 60,
-          "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 350,
-          "points": 80,
-          "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000004.json"
-        },
-        {
-          "minValue": 1000,
-          "points": 100,
-          "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000005.json"
+          "URI": "ipfs/QmaPWyPXvBXHjd19jDJE5NWKdCLJxmqXE6rizoegfUzv14/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000004.json"
         }
       ],
-      "condition": "{{variable}} transactions made on Superchain in Season 8",
-      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
-      "id": 24,
-      "URI": "ipfs/QmPsrBayH69LDDS9teMvzjRgcXVuBUeQM77uR6NRokkhFv/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge-Stack.svg",
-      "season": 8
+      "condition": "Have a Creator score above {{variable}}",
+      "chains": [
+        "Ethereum"
+      ],
+      "id": 25,
+      "URI": "ipfs/QmaPWyPXvBXHjd19jDJE5NWKdCLJxmqXE6rizoegfUzv14/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Creator-Score/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Creator-Score/Badge-Stack.svg",
+      "season": null
     }
   ]
 }
