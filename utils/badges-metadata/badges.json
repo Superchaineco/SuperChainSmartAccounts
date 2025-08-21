@@ -659,7 +659,7 @@
         }
       ],
       "condition": "Have a Creator score above {{variable}}",
-      "chains": ["Ethereum"],
+      "chains": ["Ethereum", "Optimism", "Base"],
       "season": null
     }
   ]
