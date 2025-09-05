@@ -1,41 +1,44 @@
 {
   "badges": [
-       {
-      "name": "Creator Score",
-      "description": "Creator score by Talent Protocol",
-      "platform": "Talent Protocol",
+  {
+      "name": "ETH Vault Deposits",
+      "description": "Deposit ETH in the WETH Super Vaults",
+      "platform": "Super Accounts",
       "levels": [
         {
-          "minValue": 10,
-          "points": 10,
-          "URI": "ipfs/QmbsRtLJeRggb8KKDBjNcJZ2NAzWFfdGjPdPGA5sksSKQ7/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 40,
+          "minValue": 1,
           "points": 20,
-          "URI": "ipfs/QmbsRtLJeRggb8KKDBjNcJZ2NAzWFfdGjPdPGA5sksSKQ7/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000002.json"
+          "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000001.json"
         },
         {
-          "minValue": 80,
-          "points": 30,
-          "URI": "ipfs/QmbsRtLJeRggb8KKDBjNcJZ2NAzWFfdGjPdPGA5sksSKQ7/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 120,
+          "minValue": 2,
           "points": 40,
-          "URI": "ipfs/QmbsRtLJeRggb8KKDBjNcJZ2NAzWFfdGjPdPGA5sksSKQ7/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000004.json"
+          "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 3,
+          "points": 60,
+          "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 4,
+          "points": 80,
+          "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 5,
+          "points": 100,
+          "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "Have a Creator score above {{variable}}",
+      "condition": "Deposit ETH in the WETH Super Vaults",
       "chains": [
-        "Ethereum",
-        "Optimism",
-        "Base"
+        "Optimism"
       ],
-      "id": 25,
-      "URI": "ipfs/QmbsRtLJeRggb8KKDBjNcJZ2NAzWFfdGjPdPGA5sksSKQ7/00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Creator-Score/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Creator-Score/Badge-Stack.svg",
+      "id": 26,
+      "URI": "ipfs/QmdG7vwEF8yNMcgB4e1Mj3SLR488icvHX38gWvpNAQaRAK/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge-Stack.svg",
       "season": null
     }
   ]

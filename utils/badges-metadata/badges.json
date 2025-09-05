@@ -661,6 +661,38 @@
       "condition": "Have a Creator score above {{variable}}",
       "chains": ["Ethereum", "Optimism", "Base"],
       "season": null
+    },
+    {
+      "name": "ETH Vault Deposits",
+      "description": "Deposit ETH in the WETH Super Vaults",
+      "platform": "Super Accounts",
+      "image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 20
+        },
+        {
+          "minValue": 2,
+          "points": 40
+        },
+        {
+          "minValue": 3,
+          "points": 60
+        },
+        {
+          "minValue": 4,
+          "points": 80
+        },
+        {
+          "minValue": 5,
+          "points": 100
+        }
+      ],
+      "condition": "Deposit ETH in the WETH Super Vaults",
+      "chains": ["Optimism"],
+      "season": null
     }
   ]
 }
