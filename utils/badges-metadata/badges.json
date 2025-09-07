@@ -692,7 +692,7 @@
       ],
       "condition": "Deposit ETH in the WETH Super Vaults",
       "chains": ["Optimism"],
-      "season": null
+      "season": 8
     }
   ]
 }
