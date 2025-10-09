@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "name": "Super Cohort 24",
+      "description": "Graduated from Super Cohort 0",
+      "platform": "Optimism",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 100,
+          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000001.json"
+        }
+      ],
+      "condition": "Complete Super Cohort 0",
+      "chains": ["Optimism"],
+      "id": 11,
+      "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge-Stack.svg",
+      "season": null
+    },
+    {
       "name": "ETH Vault Deposits",
       "description": "Deposit ETH in the WETH Super Vaults",
       "platform": "Super Accounts",
@@ -32,9 +51,7 @@
         }
       ],
       "condition": "Deposit ETH in the WETH Super Vaults",
-      "chains": [
-        "Optimism"
-      ],
+      "chains": ["Optimism"],
       "id": 26,
       "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000000.json",
       "image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge.svg",
