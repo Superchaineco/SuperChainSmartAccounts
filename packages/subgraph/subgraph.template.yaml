@@ -80,3 +80,31 @@ dataSources:
         - event: BadgeTierRemoved(indexed uint256,uint256)
           handler: handleBadgeTierRemoved
       file: ./src/super-chain-badges.ts
+  - kind: ethereum
+    name: EcoAccountsPerks
+    network: {{network}}
+    source:
+      address: "{{EcoAccountsPerks.address}}"
+      abi: EcoAccountsPerks
+      startBlock: {{EcoAccountsPerks.startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Perk
+        - PerkRedemption
+        - UserPerkClaim
+      abis:
+        - name: EcoAccountsPerks
+          file: ./abis/EcoAccountsPerks.json
+      eventHandlers:
+        - event: PerkAdded(indexed uint256,indexed uint256,indexed address,uint256,uint256)
+          handler: handlePerkAdded
+        - event: PerkSet(indexed uint256,indexed uint256,indexed address,uint256,uint256)
+          handler: handlePerkSet
+        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256)
+          handler: handlePerkRedeemed
+        - event: PerkCompleted(indexed uint256,indexed uint256)
+          handler: handlePerkCompleted
+      file: ./src/eco-accounts-perks.ts

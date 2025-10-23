@@ -6,19 +6,28 @@ sepolia:
   SuperChainBadges:
     address: "0xca707848b4FBE8c0dA869c3943F878A9ea0D907F"
     startBlock: 6673520
+  EcoAccountsPerks:
+    address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+    startBlock: 6673520 
 optimism:
   network: optimism
   SuperChainSmartAccountModule:
     address: "0x1Ee397850c3CA629d965453B3cF102E9A8806Ded"
-    startBlock: 125901332 
+    startBlock: 125901332
   SuperChainBadges:
     address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
-    startBlock: 125901059 
+    startBlock: 125901059
+  EcoAccountsPerks:
+    address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+    startBlock: 142795209
 optimism-staging:
   network: optimism
   SuperChainSmartAccountModule:
     address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
-    startBlock: 133669144 
+    startBlock: 133669144
   SuperChainBadges:
     address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
-    startBlock: 133669144 
+    startBlock: 133669144
+  EcoAccountsPerks:
+    address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+    startBlock: 142795209

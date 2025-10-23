@@ -75,6 +75,7 @@ type BadgeTier @entity {
   tier: BigInt! @orderBy(direction: asc)
   badge: Badge! # Relación con Badge
   uri: String! # string
+  perk: Perk # Relación opcional con Perk (referencia por hash)
 }
 
 type Badge @entity {
@@ -84,6 +85,22 @@ type Badge @entity {
   badgeTiers: [BadgeTier!]!
     @derivedFrom(field: "badge")
     @orderBy(direction: asc)
+  perks: [Perk!]! @derivedFrom(field: "badge")
+}
+
+type Perk @entity {
+  id: String! # keccak256(abi.encodePacked(badgeId, tier)).toHexString()
+  badgeId: BigInt!
+  tier: BigInt!
+  badge: Badge! # Relación con Badge
+  badgeTier: BadgeTier! # Relación con BadgeTier
+  token: Bytes! # address del token del premio
+  amount: BigInt! # cantidad del premio
+  maxClaims: BigInt! # máximo número de claims permitidos
+  totalClaims: BigInt! # número actual de claims
+  isCompleted: Boolean! # si se alcanzó el máximo de claims
+  redemptions: [PerkRedemption!]! @derivedFrom(field: "perk")
+  userClaims: [UserPerkClaim!]! @derivedFrom(field: "perk")
 }
 
 type AccountBadge @entity {
@@ -104,6 +121,26 @@ type LevelClaim @entity {
   account: SuperChainSmartAccount!
   level: BigInt!
   timestamp: BigInt!
+}
+
+type PerkRedemption @entity(immutable: true) {
+  id: Bytes! # transaction hash + log index
+  perk: Perk! # Relación directa con Perk
+  redeemer: Bytes! # address
+  token: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type UserPerkClaim @entity {
+  id: String! # user-perkId
+  user: Bytes! # address
+  perk: Perk! # Relación directa con Perk
+  isClaimed: Boolean!
+  claimedAt: BigInt # timestamp cuando se reclamó
+  transactionHash: Bytes # hash de la transacción de claim
 }
 
 type Meta @entity {

@@ -8,9 +8,9 @@ dataSources:
     name: SuperChainSmartAccountModule
     network: optimism
     source:
-      address: "0x1Ee397850c3CA629d965453B3cF102E9A8806Ded"
+      address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
       abi: SuperChainSmartAccountModule
-      startBlock: 125901332
+      startBlock: 133669144
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -50,9 +50,9 @@ dataSources:
     name: SuperChainBadges
     network: optimism
     source:
-      address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
+      address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
       abi: SuperChainBadges
-      startBlock: 125901059
+      startBlock: 133669144
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -80,3 +80,31 @@ dataSources:
         - event: BadgeTierRemoved(indexed uint256,uint256)
           handler: handleBadgeTierRemoved
       file: ./src/super-chain-badges.ts
+  - kind: ethereum
+    name: EcoAccountsPerks
+    network: optimism
+    source:
+      address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+      abi: EcoAccountsPerks
+      startBlock: 142795209
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Perk
+        - PerkRedemption
+        - UserPerkClaim
+      abis:
+        - name: EcoAccountsPerks
+          file: ./abis/EcoAccountsPerks.json
+      eventHandlers:
+        - event: PerkAdded(indexed uint256,indexed uint256,indexed address,uint256,uint256)
+          handler: handlePerkAdded
+        - event: PerkSet(indexed uint256,indexed uint256,indexed address,uint256,uint256)
+          handler: handlePerkSet
+        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256)
+          handler: handlePerkRedeemed
+        - event: PerkCompleted(indexed uint256,indexed uint256)
+          handler: handlePerkCompleted
+      file: ./src/eco-accounts-perks.ts
