@@ -84,7 +84,7 @@ dataSources:
     name: EcoAccountsPerks
     network: optimism
     source:
-      address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+      address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
       abi: EcoAccountsPerks
       startBlock: 142795209
     mapping:
