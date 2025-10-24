@@ -16,8 +16,8 @@ function generatePerkId(badgeId: BigInt, tier: BigInt): Bytes {
 }
 
 export function handlePerkAdded(event: PerkAddedEvent): void {
-  let badgeId = event.params.badgeId.toString();
-  let tierId = badgeId + "-" + event.params.tier.toString();
+  let badgeId = event.params.badgeId.toHexString();
+  let tierId = event.params.badgeId.toHexString().concat(event.params.tier.toString());
   let perkId = generatePerkId(event.params.badgeId, event.params.tier);
   
   // Buscar o crear la badge
@@ -59,8 +59,8 @@ export function handlePerkAdded(event: PerkAddedEvent): void {
 }
 
 export function handlePerkSet(event: PerkSetEvent): void {
-  let badgeId = event.params.badgeId.toString();
-  let tierId = badgeId + "-" + event.params.tier.toString();
+  let badgeId = event.params.badgeId.toHexString();
+  let tierId = event.params.badgeId.toHexString().concat(event.params.tier.toString());
   let perkId = generatePerkId(event.params.badgeId, event.params.tier);
   
   let badge = Badge.load(badgeId);
