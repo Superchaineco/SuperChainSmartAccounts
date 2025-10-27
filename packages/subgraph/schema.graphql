@@ -109,6 +109,7 @@ type AccountBadge @entity {
   badge: Badge! # Relación con Badge
   tier: BigInt!
   points: BigInt! # uint256
+  perkClaims: [UserPerkClaim!]! @derivedFrom(field: "accountBadge")
 }
 
 type TierTresholds @entity {
@@ -138,6 +139,7 @@ type UserPerkClaim @entity {
   id: String! # user-perkId
   user: Bytes! # address
   perk: Perk! # Relación directa con Perk
+  accountBadge: AccountBadge # Relación opcional con AccountBadge
   isClaimed: Boolean!
   claimedAt: BigInt # timestamp cuando se reclamó
   transactionHash: Bytes # hash de la transacción de claim
