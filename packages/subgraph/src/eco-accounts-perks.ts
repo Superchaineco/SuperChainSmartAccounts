@@ -1,4 +1,4 @@
-import { BigInt, Bytes, crypto } from "@graphprotocol/graph-ts";
+import { BigInt, Bytes, crypto, log } from "@graphprotocol/graph-ts";
 import {
   PerkAdded as PerkAddedEvent,
   PerkSet as PerkSetEvent,
@@ -115,10 +115,12 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
   // Ahora podemos usar directamente el perkId del evento
   let perkId = event.params.perkId.toHexString();
   let perk = Perk.load(perkId);
+
+  redemption.perk = perkId;
   
   if (perk != null) {
+    
     // Establecer la relación
-    redemption.perk = perkId;
     
     // Incrementar totalClaims solo si maxClaims no es 0 (sin límite)
     if (perk.maxClaims.gt(BigInt.fromI32(0))) {
@@ -126,6 +128,8 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
     }
     
     perk.save();
+  } else {
+    log.debug("Perk with ID {} not found for redemption {}, with txHash {}", [perkId, redemptionId.toHexString(), event.transaction.hash.toHexString()]);
   }
   
   let userClaimId = event.params.redeemer.toHexString() + "-" + perkId;
