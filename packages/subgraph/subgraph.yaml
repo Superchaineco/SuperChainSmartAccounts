@@ -86,7 +86,7 @@ dataSources:
     source:
       address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
       abi: EcoAccountsPerks
-      startBlock: 142795209
+      startBlock: 142830614
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7

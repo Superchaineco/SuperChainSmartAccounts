@@ -19,7 +19,7 @@ optimism:
     startBlock: 125901059
   EcoAccountsPerks:
     address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
-    startBlock: 142795209
+    startBlock: 142830614
 optimism-staging:
   network: optimism
   SuperChainSmartAccountModule:
@@ -30,4 +30,4 @@ optimism-staging:
     startBlock: 133669144
   EcoAccountsPerks:
     address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
-    startBlock: 142795209
+    startBlock: 142830614

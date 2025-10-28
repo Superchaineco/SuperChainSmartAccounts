@@ -89,7 +89,7 @@ type Badge @entity {
 }
 
 type Perk @entity {
-  id: String! # keccak256(abi.encodePacked(badgeId, tier)).toHexString()
+  id: Bytes! # keccak256(abi.encodePacked(badgeId, tier)).toHexString()
   badgeId: BigInt!
   tier: BigInt!
   badge: Badge! # Relación con Badge
