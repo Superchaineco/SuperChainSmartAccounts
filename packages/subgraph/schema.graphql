@@ -93,7 +93,7 @@ type Perk @entity {
   badgeId: BigInt!
   tier: BigInt!
   badge: Badge! # Relación con Badge
-  badgeTier: BadgeTier! # Relación con BadgeTier
+  badgeTier: BadgeTier # Relación con BadgeTier (opcional cuando tier=0)
   token: Bytes! # address del token del premio
   amount: BigInt! # cantidad del premio
   maxClaims: BigInt! # máximo número de claims permitidos

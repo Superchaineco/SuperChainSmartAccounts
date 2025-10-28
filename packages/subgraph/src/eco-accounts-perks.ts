@@ -96,33 +96,38 @@ export function handlePerkAdded(event: PerkAddedEvent): void {
     badge.uri = ""; // Se establecerá cuando se procese el evento de badge
   }
 
-  // Buscar o crear el BadgeTier
-  let badgeTier = BadgeTier.load(tierId);
-  if (badgeTier == null) {
-    badgeTier = new BadgeTier(tierId);
-    badgeTier.tier = event.params.tier;
-    badgeTier.points = BigInt.fromI32(0); // Se establecerá cuando se procese el evento de badge tier
-    badgeTier.uri = ""; // Se establecerá cuando se procese el evento de badge tier
-    badgeTier.badge = badgeId;
-  }
-
   // Crear el Perk
   let perk = new Perk(perkId);
   perk.badgeId = event.params.badgeId;
   perk.tier = event.params.tier;
   perk.badge = badgeId;
-  perk.badgeTier = tierId;
   perk.token = event.params.token;
   perk.amount = event.params.amount;
   perk.maxClaims = event.params.maxRedemptions;
   perk.totalClaims = BigInt.fromI32(0);
   perk.isCompleted = false;
 
-  // Establecer la relación en BadgeTier
-  badgeTier.perk = perk.id;
+  // Caso especial: tier = 0 no tiene BadgeTier asociado
+  if (event.params.tier.equals(BigInt.fromI32(0))) {
+    // Para tier 0, la perk se asocia directamente a la badge sin BadgeTier
+    // El campo badgeTier queda sin asignar (null en el schema)
+  } else {
+    // Para tier > 0, crear/buscar el BadgeTier normalmente
+    let badgeTier = BadgeTier.load(tierId);
+    if (badgeTier == null) {
+      badgeTier = new BadgeTier(tierId);
+      badgeTier.tier = event.params.tier;
+      badgeTier.points = BigInt.fromI32(0);
+      badgeTier.uri = "";
+      badgeTier.badge = badgeId;
+    }
+    
+    perk.badgeTier = tierId;
+    badgeTier.perk = perk.id;
+    badgeTier.save();
+  }
 
   badge.save();
-  badgeTier.save();
   perk.save();
 }
 
@@ -147,22 +152,12 @@ export function handlePerkSet(event: PerkSetEvent): void {
     badge.uri = "";
   }
 
-  let badgeTier = BadgeTier.load(tierId);
-  if (badgeTier == null) {
-    badgeTier = new BadgeTier(tierId);
-    badgeTier.tier = event.params.tier;
-    badgeTier.points = BigInt.fromI32(0);
-    badgeTier.uri = "";
-    badgeTier.badge = badgeId;
-  }
-
   let perk = Perk.load(perkId);
   if (perk == null) {
     perk = new Perk(perkId);
     perk.badgeId = event.params.badgeId;
     perk.tier = event.params.tier;
     perk.badge = badgeId;
-    perk.badgeTier = tierId;
     perk.totalClaims = BigInt.fromI32(0);
     perk.isCompleted = false;
   }
@@ -171,10 +166,27 @@ export function handlePerkSet(event: PerkSetEvent): void {
   perk.amount = event.params.amount;
   perk.maxClaims = event.params.maxRedemptions;
 
-  badgeTier.perk = perk.id;
+  // Caso especial: tier = 0 no tiene BadgeTier asociado
+  if (event.params.tier.equals(BigInt.fromI32(0))) {
+    // Para tier 0, la perk se asocia directamente a la badge sin BadgeTier
+    // El campo badgeTier queda sin asignar (null en el schema)
+  } else {
+    // Para tier > 0, crear/buscar el BadgeTier normalmente
+    let badgeTier = BadgeTier.load(tierId);
+    if (badgeTier == null) {
+      badgeTier = new BadgeTier(tierId);
+      badgeTier.tier = event.params.tier;
+      badgeTier.points = BigInt.fromI32(0);
+      badgeTier.uri = "";
+      badgeTier.badge = badgeId;
+    }
+    
+    perk.badgeTier = tierId;
+    badgeTier.perk = perk.id;
+    badgeTier.save();
+  }
 
   badge.save();
-  badgeTier.save();
   perk.save();
 }
 

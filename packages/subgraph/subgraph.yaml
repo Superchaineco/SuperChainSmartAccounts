@@ -108,3 +108,10 @@ dataSources:
         - event: PerkCompleted(indexed uint256,indexed uint256)
           handler: handlePerkCompleted
       file: ./src/eco-accounts-perks.ts
+features:
+  - grafting
+
+graft:
+  base: QmTKGrt2ABnoxn9MzWNmToHbnbHzUyPrQGttJCGjPVokij # Deployment ID of the failed Subgraph
+
+  block: 142830613 # Last successfully indexed block
