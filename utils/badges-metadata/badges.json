@@ -693,6 +693,22 @@
       "condition": "Deposit ETH in the WETH Super Vaults",
       "chains": ["Optimism"],
       "season": 8
+    },
+    {
+      "name": "Self verification",
+      "description": "​Verify your uniqueness with Self Protocol",
+      "platform": "Super Accounts",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 1,
+          "points": 150
+        }
+      ],
+      "condition": "Verify your Country via Self",
+      "chains": ["Optimism"],
+      "season": 8
     }
   ]
 }

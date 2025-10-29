@@ -1,61 +1,24 @@
 {
   "badges": [
-    {
-      "name": "Super Cohort 24",
-      "description": "Graduated from Super Cohort 0",
-      "platform": "Optimism",
-      "levels": [
-        {
-          "minValue": 1,
-          "points": 100,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000001.json"
-        }
-      ],
-      "condition": "Complete Super Cohort 0",
-      "chains": ["Optimism"],
-      "id": 11,
-      "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Super-Cohort-24/Badge-Stack.svg",
-      "season": null
-    },
-    {
-      "name": "ETH Vault Deposits",
-      "description": "Deposit ETH in the WETH Super Vaults",
+   {
+      "name": "Self verification",
+      "description": "​Verify your uniqueness with Self Protocol",
       "platform": "Super Accounts",
       "levels": [
         {
           "minValue": 1,
-          "points": 20,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 2,
-          "points": 40,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000002.json"
-        },
-        {
-          "minValue": 3,
-          "points": 60,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 4,
-          "points": 80,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000004.json"
-        },
-        {
-          "minValue": 5,
-          "points": 100,
-          "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000005.json"
+          "points": 150,
+          "URI": "ipfs/QmV788xYJFJ5ZTXKhE3ATNV3XhbvDg9k5SEbVNnnFdKvKe/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000001.json"
         }
       ],
-      "condition": "Deposit ETH in the WETH Super Vaults",
-      "chains": ["Optimism"],
-      "id": 26,
-      "URI": "ipfs/QmYSzCMrr8GWH29t6jPH5njB9YSd4tb8XLEqha8ynZgrPz/00000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/ETH-Vault-Deposits/Badge-Stack.svg",
+      "condition": "Verify your Country via Self",
+      "chains": [
+        "Optimism"
+      ],
+      "id": 27,
+      "URI": "ipfs/QmV788xYJFJ5ZTXKhE3ATNV3XhbvDg9k5SEbVNnnFdKvKe/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge-Stack.svg",
       "season": 8
     }
   ]
