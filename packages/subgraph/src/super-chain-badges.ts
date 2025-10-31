@@ -1,4 +1,4 @@
-import { store } from '@graphprotocol/graph-ts'
+import { store, BigInt } from '@graphprotocol/graph-ts'
 import {
     BadgeTierSet as BadgeTierSetEvent,
     BadgeTierUpdated as BadgeTierUpdatedEvent,
@@ -9,7 +9,7 @@ import {
     BadgeMetadataUpdated as BadgeMetadataUpdatedEvent,
 } from "../generated/SuperChainBadges/SuperChainBadges"
 import {
-    BadgeTier, Badge, AccountBadge,
+    BadgeTier, Badge, AccountBadge, SuperChainSmartAccount,
 } from "../generated/schema"
 
 
@@ -52,13 +52,37 @@ export function handleBadgeTierUpdated(event: BadgeTierUpdatedEvent): void {
 }
 
 export function handleBadgeMinted(event: BadgeMintedEvent): void {
-    let entity = new AccountBadge(event.params.user.concatI32(event.params.badgeId.toI32()))
+    let accountBadgeId = event.params.user.concatI32(event.params.badgeId.toI32())
+    let entity = new AccountBadge(accountBadgeId)
     let badge = Badge.load(event.params.badgeId.toHexString())
     if (!badge) return
+    
+    // Buscar o crear SuperChainSmartAccount
+    let superChainAccount = SuperChainSmartAccount.load(event.params.user)
+    if (superChainAccount == null) {
+        // Si no existe, crear una cuenta básica
+        superChainAccount = new SuperChainSmartAccount(event.params.user)
+        superChainAccount.safe = event.params.user
+        superChainAccount.initialOwner = event.params.user // Asumimos que es el owner inicial
+        superChainAccount.superChainId = "0" // ID por defecto
+        superChainAccount.level = BigInt.fromI32(0)
+        superChainAccount.points = BigInt.fromI32(0)
+        // Valores por defecto para noun
+        superChainAccount.noun_background = BigInt.fromI32(0)
+        superChainAccount.noun_body = BigInt.fromI32(0)
+        superChainAccount.noun_accessory = BigInt.fromI32(0)
+        superChainAccount.noun_head = BigInt.fromI32(0)
+        superChainAccount.noun_glasses = BigInt.fromI32(0)
+        superChainAccount.blockNumber = event.block.number
+        superChainAccount.blockTimestamp = event.block.timestamp
+        superChainAccount.transactionHash = event.transaction.hash
+        superChainAccount.save()
+    }
+    
     entity.badge = badge.id
     entity.tier = event.params.initialTier
     entity.points = event.params.points
-    entity.user = event.params.user
+    entity.user = superChainAccount.id // Referencia correcta a SuperChainSmartAccount
     entity.save()
 }
 

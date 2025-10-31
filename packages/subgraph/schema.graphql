@@ -99,8 +99,7 @@ type Perk @entity {
   maxClaims: BigInt! # máximo número de claims permitidos
   totalClaims: BigInt! # número actual de claims
   isCompleted: Boolean! # si se alcanzó el máximo de claims
-  redemptions: [PerkRedemption!]! @derivedFrom(field: "perk")
-  userClaims: [UserPerkClaim!]! @derivedFrom(field: "perk")
+  perkClaims: [PerkRedemption!]! @derivedFrom(field: "perk")
 }
 
 type AccountBadge @entity {
@@ -109,7 +108,7 @@ type AccountBadge @entity {
   badge: Badge! # Relación con Badge
   tier: BigInt!
   points: BigInt! # uint256
-  perkClaims: [UserPerkClaim!]! @derivedFrom(field: "accountBadge")
+  redemptions: [PerkRedemption!]! @derivedFrom(field: "accountBadge")
 }
 
 type TierTresholds @entity {
@@ -128,21 +127,12 @@ type PerkRedemption @entity(immutable: true) {
   id: Bytes! # transaction hash + log index
   perk: Perk! # Relación directa con Perk
   redeemer: Bytes! # address
+  accountBadge: AccountBadge # Relación con AccountBadge del usuario
   token: Bytes! # address
   amount: BigInt! # uint256
   blockNumber: BigInt!
   blockTimestamp: BigInt!
   transactionHash: Bytes!
-}
-
-type UserPerkClaim @entity {
-  id: String! # user-perkId
-  user: Bytes! # address
-  perk: Perk! # Relación directa con Perk
-  accountBadge: AccountBadge # Relación opcional con AccountBadge
-  isClaimed: Boolean!
-  claimedAt: BigInt # timestamp cuando se reclamó
-  transactionHash: Bytes # hash de la transacción de claim
 }
 
 type Meta @entity {

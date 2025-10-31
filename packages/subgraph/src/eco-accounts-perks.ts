@@ -10,20 +10,21 @@ import {
   BadgeTier,
   Perk,
   PerkRedemption,
-  UserPerkClaim,
+  SuperChainSmartAccount,
+  AccountBadge,
 } from "../generated/schema";
 
 function generatePerkId(badgeId: BigInt, tier: BigInt): Bytes {
   // Replicar exactamente: keccak256(abi.encodePacked(badgeId, tier))
-  
+
   // En Solidity, abi.encodePacked con uint256 concatena los 32 bytes de cada valor
   let badgeIdBytes = new ByteArray(32);
   let tierBytes = new ByteArray(32);
-  
+
   // Convertir BigInt a bytes de 32 bytes (big-endian)
   let badgeIdHex = badgeId.toHex().slice(2); // Quitar '0x'
   let tierHex = tier.toHex().slice(2); // Quitar '0x'
-  
+
   // Pad a 64 caracteres (32 bytes)
   while (badgeIdHex.length < 64) {
     badgeIdHex = "0" + badgeIdHex;
@@ -31,25 +32,25 @@ function generatePerkId(badgeId: BigInt, tier: BigInt): Bytes {
   while (tierHex.length < 64) {
     tierHex = "0" + tierHex;
   }
-  
+
   // Convertir hex string a bytes
   for (let i = 0; i < 32; i++) {
     let hexByte = badgeIdHex.substr(i * 2, 2);
     badgeIdBytes[i] = parseInt(hexByte, 16) as u8;
   }
-  
+
   for (let i = 0; i < 32; i++) {
     let hexByte = tierHex.substr(i * 2, 2);
     tierBytes[i] = parseInt(hexByte, 16) as u8;
   }
-  
+
   // Concatenar badgeId + tier (64 bytes total)
   let concatenated = new ByteArray(64);
   for (let i = 0; i < 32; i++) {
     concatenated[i] = badgeIdBytes[i];
     concatenated[i + 32] = tierBytes[i];
   }
-  
+
   // Hacer keccak256 del resultado concatenado
   return Bytes.fromByteArray(crypto.keccak256(concatenated));
 }
@@ -57,21 +58,48 @@ function generatePerkId(badgeId: BigInt, tier: BigInt): Bytes {
 // Función helper para debugging: buscar perks similares
 function debugPerkSearch(targetPerkId: Bytes): void {
   log.warning("🔍 Debugging perk search for: {}", [targetPerkId.toHexString()]);
-  
+
   // Intentemos generar algunos perkIds comunes para comparar
   for (let badgeId = 1; badgeId <= 5; badgeId++) {
     for (let tier = 0; tier <= 3; tier++) {
-      let testPerkId = generatePerkId(BigInt.fromI32(badgeId), BigInt.fromI32(tier));
+      let testPerkId = generatePerkId(
+        BigInt.fromI32(badgeId),
+        BigInt.fromI32(tier),
+      );
       let testPerk = Perk.load(testPerkId);
       if (testPerk != null) {
         log.warning("✅ Found perk: badgeId={}, tier={}, perkId={}", [
           badgeId.toString(),
           tier.toString(),
-          testPerkId.toHexString()
+          testPerkId.toHexString(),
         ]);
       }
     }
   }
+}
+
+// Función helper para encontrar el AccountBadge correcto
+function findAccountBadge(user: Bytes, perk: Perk): AccountBadge | null {
+  // Construir ID: dirección + badgeId en bytes
+  let accountBadgeId = user.concatI32(perk.badgeId.toI32());
+
+  log.info("🔍 Buscando AccountBadge con ID: {} para user: {} y badgeId: {}", [
+    accountBadgeId.toHexString(),
+    user.toHexString(),
+    perk.badgeId.toString()
+  ]);
+
+  // Intentar cargar primero
+  let accountBadge = AccountBadge.load(accountBadgeId);
+
+  if (accountBadge != null) {
+    log.info("✅ AccountBadge encontrado! ID: {}", [accountBadge.id.toHexString()]);
+  } else {
+    log.warning("⚠️ AccountBadge no encontrado con ID: {}", [accountBadgeId.toHexString()]);
+   
+  }
+
+  return accountBadge;
 }
 
 export function handlePerkAdded(event: PerkAddedEvent): void {
@@ -80,12 +108,12 @@ export function handlePerkAdded(event: PerkAddedEvent): void {
     .toHexString()
     .concat(event.params.tier.toString());
   let perkId = generatePerkId(event.params.badgeId, event.params.tier);
-  
+
   // Logging temporal para debugging
   log.warning("PerkAdded: badgeId={}, tier={}, generatedPerkId={}", [
     event.params.badgeId.toString(),
     event.params.tier.toString(),
-    perkId.toHexString()
+    perkId.toHexString(),
   ]);
 
   // Buscar o crear la badge
@@ -121,7 +149,7 @@ export function handlePerkAdded(event: PerkAddedEvent): void {
       badgeTier.uri = "";
       badgeTier.badge = badgeId;
     }
-    
+
     perk.badgeTier = tierId;
     badgeTier.perk = perk.id;
     badgeTier.save();
@@ -137,12 +165,12 @@ export function handlePerkSet(event: PerkSetEvent): void {
     .toHexString()
     .concat(event.params.tier.toString());
   let perkId = generatePerkId(event.params.badgeId, event.params.tier);
-  
+
   // Logging temporal para debugging
   log.warning("PerkSet: badgeId={}, tier={}, generatedPerkId={}", [
     event.params.badgeId.toString(),
     event.params.tier.toString(),
-    perkId.toHexString()
+    perkId.toHexString(),
   ]);
 
   let badge = Badge.load(badgeId);
@@ -180,7 +208,7 @@ export function handlePerkSet(event: PerkSetEvent): void {
       badgeTier.uri = "";
       badgeTier.badge = badgeId;
     }
-    
+
     perk.badgeTier = tierId;
     badgeTier.perk = perk.id;
     badgeTier.save();
@@ -202,7 +230,7 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
     perkId.toHexString(),
     event.params.redeemer.toHexString(),
     event.params.token.toHexString(),
-    event.params.amount.toString()
+    event.params.amount.toString(),
   ]);
 
   // El perk debe existir antes de procesar la redención
@@ -210,16 +238,46 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
     log.error("❌ PERK NULL! PerkId: {}, Block: {}, Transaction: {}", [
       perkId.toHexString(),
       event.block.number.toString(),
-      event.transaction.hash.toHexString()
+      event.transaction.hash.toHexString(),
     ]);
-    
-    // Debugging: buscar perks existentes
-    debugPerkSearch(perkId);
     return;
+  }
+
+  let accountBadge = findAccountBadge(event.params.redeemer, perk);
+
+  // Para tier 0, no se requiere un AccountBadge específico
+  if (accountBadge == null && !perk.tier.equals(BigInt.fromI32(0))) {
+    log.warning(
+      "⚠️  No se puede redimir perk: usuario no tiene badge requerido. redeemer={}, badgeId={}, tier={}",
+      [
+        event.params.redeemer.toHexString(),
+        perk.badgeId.toString(),
+        perk.tier.toString(),
+      ],
+    );
+    // En este caso podríamos decidir si continuar o retornar
+    // Por ahora continuamos pero sin AccountBadge
+  } else if (accountBadge != null) {
+    log.info(
+      "✅ AccountBadge encontrado: user={}, badge={}, userTier={}, requiredTier={}",
+      [
+        event.params.redeemer.toHexString(),
+        perk.badgeId.toString(),
+        accountBadge.tier.toString(),
+        perk.tier.toString(),
+      ],
+    );
+  } else if(accountBadge  == null) {
+    log.info("Account badge no encontrado para redeemer={} y perkId={} y badgeId={}", [
+      event.params.redeemer.toHexString(),
+      perkId.toHexString(),
+      perk.badgeId.toString(),
+    ]);
   }
 
   let redemption = new PerkRedemption(redemptionId);
   redemption.redeemer = event.params.redeemer;
+  redemption.accountBadge = accountBadge ? accountBadge.id : null;
   redemption.token = event.params.token;
   redemption.amount = event.params.amount;
   redemption.blockNumber = event.block.number;
@@ -231,27 +289,20 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
   perk.totalClaims = perk.totalClaims.plus(BigInt.fromI32(1));
 
   // Marcar como completado si se alcanzó el máximo de claims (si hay límite)
-  if (perk.maxClaims.gt(BigInt.fromI32(0)) && perk.totalClaims.ge(perk.maxClaims)) {
+  if (
+    perk.maxClaims.gt(BigInt.fromI32(0)) &&
+    perk.totalClaims.ge(perk.maxClaims)
+  ) {
     perk.isCompleted = true;
   }
 
   perk.save();
-
-  let userClaimId = event.params.redeemer.toHexString() + "-" + perkId.toHexString();
-  let userClaim = UserPerkClaim.load(userClaimId);
-
-  if (userClaim == null) {
-    userClaim = new UserPerkClaim(userClaimId);
-    userClaim.user = event.params.redeemer;
-    userClaim.perk = perkId;
-  }
-
-  userClaim.isClaimed = true;
-  userClaim.claimedAt = event.block.timestamp;
-  userClaim.transactionHash = event.transaction.hash;
-
   redemption.save();
-  userClaim.save();
+
+  log.info("✅ PerkRedeemed procesado: redemptionId={}, accountBadge={}", [
+    redemptionId.toHexString(),
+    accountBadge ? accountBadge.id.toHexString() : "null",
+  ]);
 }
 
 export function handlePerkCompleted(event: PerkCompletedEvent): void {
