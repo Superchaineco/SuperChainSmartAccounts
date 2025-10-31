@@ -108,7 +108,7 @@ type AccountBadge @entity {
   badge: Badge! # Relación con Badge
   tier: BigInt!
   points: BigInt! # uint256
-  redemptions: [PerkRedemption!]! @derivedFrom(field: "accountBadge")
+  perkClaims: [PerkRedemption!]! @derivedFrom(field: "accountBadge")
 }
 
 type TierTresholds @entity {
