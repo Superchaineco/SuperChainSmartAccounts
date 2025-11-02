@@ -86,17 +86,32 @@ function findAccountBadge(user: Bytes, perk: Perk): AccountBadge | null {
   log.info("🔍 Buscando AccountBadge con ID: {} para user: {} y badgeId: {}", [
     accountBadgeId.toHexString(),
     user.toHexString(),
-    perk.badgeId.toString()
+    perk.badgeId.toString(),
   ]);
 
   // Intentar cargar primero
   let accountBadge = AccountBadge.load(accountBadgeId);
 
   if (accountBadge != null) {
-    log.info("✅ AccountBadge encontrado! ID: {}", [accountBadge.id.toHexString()]);
+    log.info("✅ AccountBadge encontrado! ID: {}", [
+      accountBadge.id.toHexString(),
+    ]);
   } else {
-    log.warning("⚠️ AccountBadge no encontrado con ID: {}", [accountBadgeId.toHexString()]);
-   
+    log.warning("⚠️ AccountBadge no encontrado con ID: {}", [
+      accountBadgeId.toHexString(),
+    ]);
+    let badge = Badge.load(perk.badge);
+    if (badge != null) {
+      accountBadge = new AccountBadge(accountBadgeId);
+      accountBadge.user = user;
+      accountBadge.badge = perk.badgeId.toHexString();
+      accountBadge.tier = perk.tier;
+      accountBadge.points = BigInt.fromI32(0); // Inicializar en 0
+      accountBadge.save();
+      log.info("🆕 AccountBadge creado! ID: {}", [
+        accountBadge.id.toHexString(),
+      ]);
+    }
   }
 
   return accountBadge;
@@ -267,12 +282,15 @@ export function handlePerkRedeemed(event: PerkRedeemedEvent): void {
         perk.tier.toString(),
       ],
     );
-  } else if(accountBadge  == null) {
-    log.info("Account badge no encontrado para redeemer={} y perkId={} y badgeId={}", [
-      event.params.redeemer.toHexString(),
-      perkId.toHexString(),
-      perk.badgeId.toString(),
-    ]);
+  } else if (accountBadge == null) {
+    log.info(
+      "Account badge no encontrado para redeemer={} y perkId={} y badgeId={}",
+      [
+        event.params.redeemer.toHexString(),
+        perkId.toHexString(),
+        perk.badgeId.toString(),
+      ],
+    );
   }
 
   let redemption = new PerkRedemption(redemptionId);
