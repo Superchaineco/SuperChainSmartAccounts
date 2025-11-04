@@ -84,9 +84,9 @@ dataSources:
     name: EcoAccountsPerks
     network: optimism
     source:
-      address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
+      address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
       abi: EcoAccountsPerks
-      startBlock: 142830614
+      startBlock: 143309558
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -103,7 +103,7 @@ dataSources:
           handler: handlePerkAdded
         - event: PerkSet(indexed uint256,indexed uint256,indexed address,uint256,uint256)
           handler: handlePerkSet
-        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256)
+        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256,uint256,uint256)
           handler: handlePerkRedeemed
         - event: PerkCompleted(indexed uint256,indexed uint256)
           handler: handlePerkCompleted

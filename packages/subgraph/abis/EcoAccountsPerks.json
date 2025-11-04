@@ -170,11 +170,14 @@
       "name": "redeemPerks",
       "inputs": [
         {
-          "name": "badgeIds",
-          "type": "uint256[]",
-          "internalType": "uint256[]"
+          "name": "claims",
+          "type": "tuple[]",
+          "internalType": "struct EcoAccountsPerks.PerkClaim[]",
+          "components": [
+            { "name": "badgeId", "type": "uint256", "internalType": "uint256" },
+            { "name": "tier", "type": "uint256", "internalType": "uint256" }
+          ]
         },
-        { "name": "tiers", "type": "uint256[]", "internalType": "uint256[]" },
         { "name": "user", "type": "address", "internalType": "address" }
       ],
       "outputs": [],
@@ -390,6 +393,18 @@
           "internalType": "address"
         },
         {
+          "name": "badgeId",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "tier",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
           "name": "amount",
           "type": "uint256",
           "indexed": false,
@@ -534,13 +549,6 @@
     },
     { "type": "error", "name": "EnforcedPause", "inputs": [] },
     { "type": "error", "name": "ExpectedPause", "inputs": [] },
-    {
-      "type": "error",
-      "name": "InvalidPerk",
-      "inputs": [
-        { "name": "perkId", "type": "bytes32", "internalType": "bytes32" }
-      ]
-    },
     {
       "type": "error",
       "name": "OwnableInvalidOwner",

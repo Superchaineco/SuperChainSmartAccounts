@@ -7,7 +7,7 @@ sepolia:
     address: "0xca707848b4FBE8c0dA869c3943F878A9ea0D907F"
     startBlock: 6673520
   EcoAccountsPerks:
-    address: "0x0349d7175b954c933b387ac9B9a5F08A6888AeE7"
+    address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
     startBlock: 6673520 
 optimism:
   network: optimism
@@ -18,8 +18,8 @@ optimism:
     address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
     startBlock: 125901059
   EcoAccountsPerks:
-    address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
-    startBlock: 142830614
+    address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
+    startBlock: 143309558
 optimism-staging:
   network: optimism
   SuperChainSmartAccountModule:
@@ -29,5 +29,5 @@ optimism-staging:
     address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
     startBlock: 133669144
   EcoAccountsPerks:
-    address: "0xB91d75fB60dB282D69B9e7176eF630AaAfFA02E5"
-    startBlock: 142830614
+    address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
+    startBlock: 143309558

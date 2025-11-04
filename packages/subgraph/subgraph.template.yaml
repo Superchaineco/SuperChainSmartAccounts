@@ -103,7 +103,7 @@ dataSources:
           handler: handlePerkAdded
         - event: PerkSet(indexed uint256,indexed uint256,indexed address,uint256,uint256)
           handler: handlePerkSet
-        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256)
+        - event: PerkRedeemed(indexed bytes32,indexed address,indexed address,uint256,uint256,uint256)
           handler: handlePerkRedeemed
         - event: PerkCompleted(indexed uint256,indexed uint256)
           handler: handlePerkCompleted
