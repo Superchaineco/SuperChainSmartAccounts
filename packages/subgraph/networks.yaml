@@ -18,8 +18,8 @@ optimism:
     address: "0x03e2c563cf77e3Cdc0b7663cEE117dA14ea60848"
     startBlock: 125901059
   EcoAccountsPerks:
-    address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
-    startBlock: 143309558
+    address: "0x6a252eE35262d550eF9991e3ACf483878A48E175"
+    startBlock: 143430876
 optimism-staging:
   network: optimism
   SuperChainSmartAccountModule:
