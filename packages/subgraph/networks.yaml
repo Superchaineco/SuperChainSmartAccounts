@@ -29,5 +29,5 @@ optimism-staging:
     address: "0xbC24012488BFCFe44875a139299595879c43C2CD"
     startBlock: 133669144
   EcoAccountsPerks:
-    address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
-    startBlock: 143309558
+    address: "0x64BF1BA442cC00803986d2A9E8E32958c77D8bEb"
+    startBlock: 143441451
