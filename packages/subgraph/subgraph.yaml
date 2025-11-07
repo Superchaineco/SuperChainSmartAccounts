@@ -84,9 +84,9 @@ dataSources:
     name: EcoAccountsPerks
     network: optimism
     source:
-      address: "0xb9e752778DbEa1F957A83d66eFF0c6a395e5f76C"
+      address: "0x64BF1BA442cC00803986d2A9E8E32958c77D8bEb"
       abi: EcoAccountsPerks
-      startBlock: 143309558
+      startBlock: 143441451
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
