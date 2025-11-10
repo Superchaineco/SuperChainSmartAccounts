@@ -1,6 +1,6 @@
 {
   "badges": [
-   {
+      {
       "name": "Self verification",
       "description": "​Verify your uniqueness with Self Protocol",
       "platform": "Super Accounts",
@@ -8,15 +8,15 @@
         {
           "minValue": 1,
           "points": 150,
-          "URI": "ipfs/QmV788xYJFJ5ZTXKhE3ATNV3XhbvDg9k5SEbVNnnFdKvKe/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000001.json"
+          "URI": "ipfs/QmUiYmtQguj6DT7B3DDussYHxYw2ShW1cuAvfwrPtKA9Wm/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000001.json"
         }
       ],
       "condition": "Verify your Country via Self",
       "chains": [
-        "Optimism"
+        "Celo"
       ],
       "id": 27,
-      "URI": "ipfs/QmV788xYJFJ5ZTXKhE3ATNV3XhbvDg9k5SEbVNnnFdKvKe/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000000.json",
+      "URI": "ipfs/QmUiYmtQguj6DT7B3DDussYHxYw2ShW1cuAvfwrPtKA9Wm/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000000.json",
       "image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge.svg",
       "stack-image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge-Stack.svg",
       "season": 8

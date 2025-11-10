@@ -707,7 +707,7 @@
         }
       ],
       "condition": "Verify your Country via Self",
-      "chains": ["Optimism"],
+      "chains": ["Celo"],
       "season": 8
     }
   ]
