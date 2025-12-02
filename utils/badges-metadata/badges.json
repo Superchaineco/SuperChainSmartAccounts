@@ -709,6 +709,38 @@
       "condition": "Verify your Country via Self",
       "chains": ["Celo"],
       "season": 8
+    },
+    {
+      "name": "Celo User",
+      "description": "Number of transactions made on Celo",
+      "platform": "CELO",
+      "image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge-Stack.svg",
+      "levels": [
+        {
+          "minValue": 5,
+          "points": 10
+        },
+        {
+          "minValue": 20,
+          "points": 20
+        },
+        {
+          "minValue": 50,
+          "points": 30
+        },
+        {
+          "minValue": 100,
+          "points": 40
+        },
+        {
+          "minValue": 250,
+          "points": 50
+        }
+      ],
+      "condition": "{{variable}} transaction made on Celo",
+      "chains": ["Celo"],
+      "season": 8
     }
   ]
 }

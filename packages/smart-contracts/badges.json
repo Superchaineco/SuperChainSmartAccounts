@@ -1,24 +1,44 @@
 {
   "badges": [
       {
-      "name": "Self verification",
-      "description": "​Verify your uniqueness with Self Protocol",
-      "platform": "Super Accounts",
+      "name": "Celo User",
+      "description": "Number of transactions made on Celo",
+      "platform": "CELO",
       "levels": [
         {
-          "minValue": 1,
-          "points": 150,
-          "URI": "ipfs/QmUiYmtQguj6DT7B3DDussYHxYw2ShW1cuAvfwrPtKA9Wm/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000001.json"
+          "minValue": 5,
+          "points": 10,
+          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000001.json"
+        },
+        {
+          "minValue": 20,
+          "points": 20,
+          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000002.json"
+        },
+        {
+          "minValue": 50,
+          "points": 30,
+          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 100,
+          "points": 40,
+          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 250,
+          "points": 50,
+          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "Verify your Country via Self",
+      "condition": "{{variable}} transaction made on Celo",
       "chains": [
         "Celo"
       ],
-      "id": 27,
-      "URI": "ipfs/QmUiYmtQguj6DT7B3DDussYHxYw2ShW1cuAvfwrPtKA9Wm/00000000000000000000000000000000000000000000000000000000000000270000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/All-Time/Self-Verification/Badge-Stack.svg",
+      "id": 28,
+      "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge-Stack.svg",
       "season": 8
     }
   ]
