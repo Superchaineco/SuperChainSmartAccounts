@@ -1,44 +1,50 @@
 {
   "badges": [
       {
-      "name": "Celo User",
-      "description": "Number of transactions made on Celo",
-      "platform": "CELO",
+      "name": "S8 Super User",
+      "description": "Number of transactions made on Superchain in Season 8",
+      "platform": "Superchain",
       "levels": [
         {
-          "minValue": 5,
-          "points": 10,
-          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000001.json"
-        },
-        {
-          "minValue": 20,
+          "minValue": 25,
           "points": 20,
-          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000002.json"
+          "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000001.json"
         },
         {
-          "minValue": 50,
-          "points": 30,
-          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000003.json"
-        },
-        {
-          "minValue": 100,
+          "minValue": 70,
           "points": 40,
-          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000004.json"
+          "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000002.json"
         },
         {
-          "minValue": 250,
-          "points": 50,
-          "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000005.json"
+          "minValue": 150,
+          "points": 60,
+          "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000003.json"
+        },
+        {
+          "minValue": 350,
+          "points": 80,
+          "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000004.json"
+        },
+        {
+          "minValue": 1000,
+          "points": 100,
+          "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000005.json"
         }
       ],
-      "condition": "{{variable}} transaction made on Celo",
+      "condition": "{{variable}} transactions made on Superchain in Season 8",
       "chains": [
+        "Optimism",
+        "Base",
+        "Mode",
+        "Ink",
+        "Unichain",
+        "Soneium",
         "Celo"
       ],
-      "id": 28,
-      "URI": "ipfs/QmPBxt6k98mi4GY41i9n2vVNcVXe5wdKLtdJFVrTLC4RTJ/00000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000.json",
-      "image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge.svg",
-      "stack-image": "https://account.superchain.eco/static/badges/Season-8/CELO-user/Badge-Stack.svg",
+      "id": 24,
+      "URI": "ipfs/QmWHVtatP34ApoKRnzjQeQpDnPW3fmRkwhSknaYwczLZJr/00000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000000000000000000.json",
+      "image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge.svg",
+      "stack-image": "https://account.superchain.eco/static/badges/Season-8/S8-Super-User/Badge-Stack.svg",
       "season": 8
     }
   ]

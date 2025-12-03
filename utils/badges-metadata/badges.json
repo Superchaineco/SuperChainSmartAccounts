@@ -631,7 +631,7 @@
         }
       ],
       "condition": "{{variable}} transactions made on Superchain in Season 8",
-      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium"],
+      "chains": ["Optimism", "Base", "Mode", "Ink", "Unichain", "Soneium", "Celo"],
       "season": 8
     },
     {
